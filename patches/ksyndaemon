@@ -1,0 +1,290 @@
+Bottom: 7de061817b915478fbc9ce201b7e93682e09ad7f
+Top:    b3df68c0b3a634bc10efe7387ce04c14cf361e53
+Author: Andrey Borzenkov <arvidjaar@mail.ru>
+Date:   2010-02-13 22:11:16 +0300
+
+Add ksyndaemon daemon to monitor touchpad
+
+Add ksyndaemon as helper to implement smart mode. It is just
+a wrapper around stock syndaemon wich is auto-started via D-Bus
+
+
+---
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index ef3a988..5c4743c 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -10,7 +10,7 @@ set( kcm_touchpad_PART_SRCS
+     touchpad.cpp
+ )
+ 
+-include_directories( ${CMAKE_BINARY_DIR} ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_BUILD_DIR}
++include_directories( ${CMAKE_CURRENT_BINARY_DIR} ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_BUILD_DIR}
+     ${QT_INCLUDES}
+     ${KDE4_INCLUDES}
+ )
+@@ -34,3 +34,6 @@ install( FILES touchpad.desktop DESTINATION  ${SERVICES_INSTALL_DIR} )
+ install( FILES AUTHORS README LICENSE DESTINATION ${SHARE_INSTALL_PREFIX}/doc/kcm_touchpad )
+ 
+ #install( FILES ${QM_FILES} DESTINATION ${CMAKE_INSTALL_PREFIX}/translations )
++
++########### ksyndaemon #########
++add_subdirectory ( ksyndaemon )
+diff --git a/ksyndaemon/CMakeLists.txt b/ksyndaemon/CMakeLists.txt
+new file mode 100644
+index 0000000..0ebf84f
+--- /dev/null
++++ b/ksyndaemon/CMakeLists.txt
+@@ -0,0 +1,28 @@
++########### D-Bus interfaces  ###############
++
++qt4_generate_dbus_interface(ksyndaemon.h)
++
++########### ksyndaemon binary ###############
++
++set(ksyndaemon_SRCS
++    ksyndaemon.cpp
++    main.cpp
++)
++
++include_directories( ${CMAKE_CURRENT_BINARY_DIR} ${CMAKE_CURRENT_SOURCE_DIR})
++
++qt4_add_dbus_adaptor(ksyndaemon_SRCS ${CMAKE_CURRENT_BINARY_DIR}/ksyndaemon.xml ksyndaemon.h KSyndaemon)
++
++kde4_add_executable( ksyndaemon ${ksyndaemon_SRCS})
++
++target_link_libraries( ksyndaemon ${KDE4_KDEUI_LIBS} )
++
++install( TARGETS ksyndaemon RUNTIME DESTINATION ${LIBEXEC_INSTALL_DIR} )
++
++install( FILES ksyndaemon.desktop  DESTINATION  ${SERVICES_INSTALL_DIR} )
++
++########### D-Bus Autostart Services #########
++configure_file(org.kde.ksyndaemon.service.cmake
++	${CMAKE_CURRENT_BINARY_DIR}/org.kde.ksyndaemon.service)
++
++install( FILES ${CMAKE_CURRENT_BINARY_DIR}/org.kde.ksyndaemon.service DESTINATION ${DBUS_SERVICES_INSTALL_DIR} )
+diff --git a/ksyndaemon/ksyndaemon.cpp b/ksyndaemon/ksyndaemon.cpp
+new file mode 100644
+index 0000000..8612286
+--- /dev/null
++++ b/ksyndaemon/ksyndaemon.cpp
+@@ -0,0 +1,80 @@
++/*
++   Copyright (C) 2009 by Andrey Borzenkov <arvidjaar at mail.ru>
++
++
++   This program is free software; you can redistribute it and/or modify
++   it under the terms of the GNU General Public License as published by
++   the Free Software Foundation; either version 2, or (at your option)
++   any later version.
++
++   This program is distributed in the hope that it will be useful,
++   but WITHOUT ANY WARRANTY; without even the implied warranty of
++   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++   GNU General Public License for more details.
++
++   You should have received a copy of the GNU General Public License
++   along with this program; if not, write to the Free Software
++   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
++
++ */
++
++#include <KUniqueApplication>
++#include <kdebug.h>
++//#include <kglobal.h>
++//#include <klocale.h>
++//#include <kmessage.h>
++//#include <kpassivepopupmessagehandler.h>
++//#include <kdefakes.h>
++
++#include "ksyndaemon.h"
++#include "ksyndaemonadaptor.h"
++
++KSyndaemon::KSyndaemon(void)
++	: KUniqueApplication(false),
++	m_interval(1),
++	m_cmd("exec syndaemon -R -i "),
++	daemon()
++{
++	new KSyndaemonAdaptor(this);
++	QDBusConnection dbus = QDBusConnection::sessionBus();
++	dbus.registerObject("/Syndaemon", this);
++	dbus.registerService("org.kde.KSyndaemon");
++}
++
++KSyndaemon::~KSyndaemon(void)
++{
++	stopMonitoring();
++}
++
++void
++KSyndaemon::setInterval(unsigned i)
++{
++	unsigned old = m_interval;
++
++	m_interval = i;
++	if (old != i && daemon.state() == QProcess::Running) {
++		stopMonitoring();
++		startMonitoring();
++	}
++}
++
++void
++KSyndaemon::startMonitoring(void)
++{
++	if (daemon.state() != QProcess::NotRunning)
++		return;
++
++	daemon.setShellCommand(m_cmd + QString::number(m_interval) + " >/dev/null");
++	daemon.start();
++}
++
++void
++KSyndaemon::stopMonitoring(void)
++{
++	if (daemon.state() == QProcess::Running) {
++		daemon.terminate();
++		daemon.waitForFinished();
++	}
++}
++
++#include "ksyndaemon.moc"
+diff --git a/ksyndaemon/ksyndaemon.desktop b/ksyndaemon/ksyndaemon.desktop
+new file mode 100644
+index 0000000..4bdbfac
+--- /dev/null
++++ b/ksyndaemon/ksyndaemon.desktop
+@@ -0,0 +1,7 @@
++[Desktop Entry]
++Type=Service
++Name=KSyndaemon
++Comment=KDE Synaptics touchpad activity monitor
++X-DBUS-ServiceName=org.kde.ksyndaemon
++X-DBUS-StartupType=Unique
++X-KDE-StartupNotify=false
+diff --git a/ksyndaemon/ksyndaemon.h b/ksyndaemon/ksyndaemon.h
+new file mode 100644
+index 0000000..52a57b6
+--- /dev/null
++++ b/ksyndaemon/ksyndaemon.h
+@@ -0,0 +1,48 @@
++/*
++   Copyright (C) 2009 by Andrey Borzenkov <arvidjaar at mail.ru>
++
++
++   This program is free software; you can redistribute it and/or modify
++   it under the terms of the GNU General Public License as published by
++   the Free Software Foundation; either version 2, or (at your option)
++   any later version.
++
++   This program is distributed in the hope that it will be useful,
++   but WITHOUT ANY WARRANTY; without even the implied warranty of
++   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++   GNU General Public License for more details.
++
++   You should have received a copy of the GNU General Public License
++   along with this program; if not, write to the Free Software
++   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
++
++ */
++
++#ifndef KSYNDAEMON_H
++#define KSYNDAEMON_H
++
++#include <KUniqueApplication>
++#include <KProcess>
++
++class KSyndaemon : public KUniqueApplication
++{
++	Q_OBJECT
++	Q_CLASSINFO("D-Bus Interface", "org.kde.KSyndaemon")
++
++	public:
++		KSyndaemon();
++		~KSyndaemon();
++
++	public Q_SLOTS:
++		void setInterval(unsigned i);
++		void startMonitoring(void);
++		void stopMonitoring(void);
++
++	private:
++		unsigned m_interval;
++		QString m_cmd;
++		KProcess daemon;
++};
++
++#endif
++
+diff --git a/ksyndaemon/main.cpp b/ksyndaemon/main.cpp
+new file mode 100644
+index 0000000..ad97348
+--- /dev/null
++++ b/ksyndaemon/main.cpp
+@@ -0,0 +1,55 @@
++/*
++   Copyright (C) 2009 by Andrey Borzenkov <arvidjaar at mail.ru>
++
++
++   This program is free software; you can redistribute it and/or modify
++   it under the terms of the GNU General Public License as published by
++   the Free Software Foundation; either version 2, or (at your option)
++   any later version.
++
++   This program is distributed in the hope that it will be useful,
++   but WITHOUT ANY WARRANTY; without even the implied warranty of
++   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++   GNU General Public License for more details.
++
++   You should have received a copy of the GNU General Public License
++   along with this program; if not, write to the Free Software
++   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
++
++ */
++
++#include <KUniqueApplication>
++#include <KAboutData>
++#include <KCmdLineArgs>
++#include <KDebug>
++#include <KLocale>
++
++#include "ksyndaemon.h"
++
++int main(int argc, char **argv)
++{
++    KAboutData aboutdata("ksyndaemon", "kcm_touchpad", ki18n("KSyndaemon"),
++                         "0.1", ki18n("KDE Synaptics touchpad activity monitor"),
++                         KAboutData::License_GPL, ki18n("(C) 2009"));
++    aboutdata.addAuthor(ki18n("Andrey Borzenkov"),ki18n("Author"),"arvidjaar@main.ru");
++    aboutdata.setBugAddress("http://kde-apps.org/content/show.php/kcm_touchpad?content=113335");
++
++    KCmdLineArgs::init( argc, argv, &aboutdata );
++    KSyndaemon::addCmdLineOptions();
++
++    // initialize application
++    if ( !KSyndaemon::start() ) {
++        kDebug() << "Running ksyndaemon found";
++        return 0;
++    }
++
++    // do not connect to ksmserver at all, ksyndaemon is launched on demand
++    // and doesn't need to know about logout
++    unsetenv( "SESSION_MANAGER" ); 
++    KSyndaemon(app);
++    
++    // start syndaemon
++    // listen to D-Bus reconfiguration events
++    app.exec();
++}
++
+diff --git a/ksyndaemon/org.kde.ksyndaemon.service.cmake b/ksyndaemon/org.kde.ksyndaemon.service.cmake
+new file mode 100644
+index 0000000..17e3a41
+--- /dev/null
++++ b/ksyndaemon/org.kde.ksyndaemon.service.cmake
+@@ -0,0 +1,3 @@
++[D-BUS Service]
++Name=org.kde.ksyndaemon
++Exec=@LIBEXEC_INSTALL_DIR@/ksyndaemon

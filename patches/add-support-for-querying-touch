@@ -1,0 +1,63 @@
+Bottom: ef0f0e9423dbc7d2aeb38be76d80e266c0960a9f
+Top:    d9e4d403f2d5b947fbf1c7d7fd891134a49beddf
+Author: Andrey Borzenkov <arvidjaar@mail.ru>
+Date:   2010-02-03 22:26:46 +0300
+
+Add support for querying touchpad capabilities
+
+Add pseudo properties to assist in querying Synaptics Capabilities
+and Touchpad::capability() helper. For older Synaptics driver
+(pre 1.2.0) that does not set Synaptics Capabilities just assume
+all of them are present.
+
+
+---
+
+diff --git a/touchpad.cpp b/touchpad.cpp
+index 7b7cd5d..12fb1d9 100644
+--- a/touchpad.cpp
++++ b/touchpad.cpp
+@@ -378,6 +378,19 @@ Touchpad::set_parameter(const char* name, double variable) {
+         dp_set_parameter(display, device, name, variable);
+ }
+ 
++bool
++Touchpad::capability(const char* name) {
++    if (display && device) {
++	char *cap;
++
++	cap = (char *)dp_get_parameter(display, device, name);
++	if (cap)
++	    return *cap == 1;
++    }
++
++    return true;
++}
++
+ const char*
+ Touchpad::get_device_name() {
+     return dev_name;
+diff --git a/touchpad.h b/touchpad.h
+index b48d5a5..a4dbc17 100644
+--- a/touchpad.h
++++ b/touchpad.h
+@@ -140,6 +140,11 @@ static struct Parameter params[] = {
+     {"AreaRightEdge",         PT_INT,    0, 10000, SYNAPTICS_PROP_AREA,	32,	1},
+     {"AreaTopEdge",           PT_INT,    0, 10000, SYNAPTICS_PROP_AREA,	32,	2},
+     {"AreaBottomEdge",        PT_INT,    0, 10000, SYNAPTICS_PROP_AREA,	32,	3},
++    {"_CapLeftButton",        PT_BOOL,   0, 1,     SYNAPTICS_PROP_CAPABILITIES,	8,	0},
++    {"_CapMiddleButton",      PT_BOOL,   0, 1,     SYNAPTICS_PROP_CAPABILITIES,	8,	1},
++    {"_CapRightButton",       PT_BOOL,   0, 1,     SYNAPTICS_PROP_CAPABILITIES,	8,	2},
++    {"_CapTwoFingers",        PT_BOOL,   0, 1,     SYNAPTICS_PROP_CAPABILITIES,	8,	3},
++    {"_CapThreeFingers",      PT_BOOL,   0, 1,     SYNAPTICS_PROP_CAPABILITIES,	8,	4},
+     { NULL, ParaType(0), 0, 0, 0, 0, 0           }
+ };
+ 
+@@ -152,6 +157,8 @@ namespace Touchpad {
+     const void* get_parameter(const char* name);
+     void set_parameter(const char* name, double variable);
+ 
++    bool capability(const char* name);
++
+     const char* get_device_name();
+ }

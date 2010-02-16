@@ -1,0 +1,40 @@
+Bottom: d9e4d403f2d5b947fbf1c7d7fd891134a49beddf
+Top:    7de061817b915478fbc9ce201b7e93682e09ad7f
+Author: Andrey Borzenkov <arvidjaar@mail.ru>
+Date:   2010-02-03 22:26:57 +0300
+
+Do not offer for configuration actions that touchpad does not support
+
+Check for touchpad capabilities and do not enable GUI elements
+for properties that touchpad does not claim to support. This avoids
+unpleasant surprise when "enabled" feature does not work.
+
+
+---
+
+diff --git a/kcmtouchpad.cpp b/kcmtouchpad.cpp
+index 096f02a..bb03321 100644
+--- a/kcmtouchpad.cpp
++++ b/kcmtouchpad.cpp
+@@ -153,7 +153,8 @@ void TouchpadConfig::enableProperties() {
+             ui->ScrollCoastingCornerEnableCB->setEnabled(true);
+         }
+     }
+-    if (this->propertiesList.contains(SYNAPTICS_PROP_SCROLL_TWOFINGER)) {
++    if (this->propertiesList.contains(SYNAPTICS_PROP_SCROLL_TWOFINGER) &&
++	 Touchpad::capability("_CapTwoFingers")) {
+         ui->ScrollVertTFEnableCB->setEnabled(true);
+         ui->ScrollHorizTFEnableCB->setEnabled(true);
+     }
+@@ -168,6 +169,11 @@ void TouchpadConfig::enableProperties() {
+     }
+     if (this->propertiesList.contains(SYNAPTICS_PROP_TAP_ACTION)) {
+         ui->TappingButtonLW->setEnabled(true);
++	/* Do not offer events Touchpad does not claim to support */
++	if (!Touchpad::capability("_CapTwoFingers"))
++	    ui->TappingEventLW->item(Synaptics::TwoFingers)->setHidden(true);
++	if (!Touchpad::capability("_CapThreeFingers"))
++	    ui->TappingEventLW->item(Synaptics::ThreeFingers)->setHidden(true);
+         ui->TappingEventLW->setEnabled(true);
+         ui->ButtonTappingL->setEnabled(true);
+         ui->ButtonMeansL->setEnabled(true);

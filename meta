@@ -1,0 +1,11 @@
+Version: 1
+Previous: None
+Head: 6ccbc890b60742e6fec9eb543291e1e9a22139d6
+Applied:
+  fix-the-scrolling-being-disabl: 331f9cf30d8c1c4e2c73712a9281778e5fee19f2
+  add-support-for-querying-touch: 29a672b59e23f6ceac1b72764cde292ac356a60a
+  do-not-offer-for-configuration: 9ab0f0c820b35f4e79ff4165402fe046ba44aa47
+  ksyndaemon: 2930869a3be0b8ed4455619b9ec11915afc3ba10
+  kcmui: 6ccbc890b60742e6fec9eb543291e1e9a22139d6
+Unapplied:
+Hidden:

@@ -1,0 +1,40 @@
+Bottom: 677d38ca118948488963322eb946deb0301e878f
+Top:    ef0f0e9423dbc7d2aeb38be76d80e266c0960a9f
+Author: Andrey Borzenkov <arvidjaar@mail.ru>
+Date:   2010-02-03 22:26:26 +0300
+
+fix the scrolling being disabled after setting the sensitivity to high
+
+
+---
+
+diff --git a/kcmtouchpadwidget.ui b/kcmtouchpadwidget.ui
+index 85a3d46..3eabd99 100644
+--- a/kcmtouchpadwidget.ui
++++ b/kcmtouchpadwidget.ui
+@@ -376,10 +376,10 @@
+              <string>Move distance of the finger for a vertical scroll event.</string>
+             </property>
+             <property name="minimum">
+-             <number>0</number>
++             <number>1</number>
+             </property>
+             <property name="maximum">
+-             <number>400</number>
++             <number>401</number>
+             </property>
+             <property name="singleStep">
+              <number>50</number>
+@@ -557,10 +557,10 @@
+              <string>Move distance of the finger for a horizontal scroll event.</string>
+             </property>
+             <property name="minimum">
+-             <number>0</number>
++             <number>1</number>
+             </property>
+             <property name="maximum">
+-             <number>400</number>
++             <number>401</number>
+             </property>
+             <property name="singleStep">
+              <number>50</number>
