@@ -24,13 +24,13 @@
 #include <KUniqueApplication>
 #include <KProcess>
 
-class KSyndaemon : public KUniqueApplication
+class KSyndaemon : public QObject
 {
 	Q_OBJECT
 	Q_CLASSINFO("D-Bus Interface", "org.kde.KSyndaemon")
 
 	public:
-		KSyndaemon();
+		KSyndaemon(QObject *parent = NULL);
 		~KSyndaemon();
 
 	public Q_SLOTS:

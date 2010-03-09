@@ -29,8 +29,8 @@
 #include "ksyndaemon.h"
 #include "ksyndaemonadaptor.h"
 
-KSyndaemon::KSyndaemon(void)
-	: KUniqueApplication(false),
+KSyndaemon::KSyndaemon(QObject *parent)
+	: QObject(parent),
 	m_interval(1),
 	m_cmd("exec syndaemon -R -i "),
 	daemon()
