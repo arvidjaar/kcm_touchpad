@@ -35,10 +35,10 @@ int main(int argc, char **argv)
     aboutdata.setBugAddress("http://kde-apps.org/content/show.php/kcm_touchpad?content=113335");
 
     KCmdLineArgs::init( argc, argv, &aboutdata );
-    KSyndaemon::addCmdLineOptions();
+    KUniqueApplication::addCmdLineOptions();
 
     // initialize application
-    if ( !KSyndaemon::start() ) {
+    if ( !KUniqueApplication::start() ) {
         kDebug() << "Running ksyndaemon found";
         return 0;
     }
@@ -46,10 +46,11 @@ int main(int argc, char **argv)
     // do not connect to ksmserver at all, ksyndaemon is launched on demand
     // and doesn't need to know about logout
     unsetenv( "SESSION_MANAGER" ); 
-    KSyndaemon(app);
+    KUniqueApplication app;
     
     // start syndaemon
+    KSyndaemon syndaemon;
     // listen to D-Bus reconfiguration events
-    app.exec();
+    return app.exec();
 }
 
