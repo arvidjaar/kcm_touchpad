@@ -1,8 +1,7 @@
 Version: 1
-Previous: 9bda498de343e03f0296ee0843b67f0d461f1091
-Head: 0016a8a2a3f6e6530e41fd592ee1ec8b884244a6
+Previous: 7ca6fa1d1e288555c12a0582e69e8465e1e3098d
+Head: ecc58378f9f1440b2b21b556cad37c3b20806a7b
 Applied:
-  fix-kcmdaemon-on-logout: ae465ce33490301123852b2be9bd76fab003707d
-  refresh-temp: 0016a8a2a3f6e6530e41fd592ee1ec8b884244a6
+  fix-kcmdaemon-on-logout: ecc58378f9f1440b2b21b556cad37c3b20806a7b
 Unapplied:
 Hidden:
