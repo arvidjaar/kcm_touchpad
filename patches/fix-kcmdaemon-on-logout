@@ -1,0 +1,19 @@
+Bottom: cb15e57181a61c61caf023cae3d8cbc6566bbb25
+Top:    cb15e57181a61c61caf023cae3d8cbc6566bbb25
+Author: Andrey Borzenkov <arvidjaar@mail.ru>
+Date:   2010-03-09 21:07:06 +0300
+
+ksyndaemon was not terminated on session logout
+
+I must honestly admit that I do not quite understand why it did not
+do it and why it does it now. I suspect the way it was used created
+two independent instances of KApplication inside of single process and
+the wrong one got information about session termination.
+
+It also provides more clean D-Bus interface limiting KSyndaemon
+interface to what it actually offers.
+
+
+---
+
+
