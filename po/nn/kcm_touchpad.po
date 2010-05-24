@@ -1,77 +1,75 @@
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Translation of kcm_touchpad to Norwegian Nynorsk
 #
-# Sander Pientka <cumulus0007@gmail.com>, 2009.
-# Kristof Bal <kristof.bal@gmail.com>, 2010.
+# Karl Ove Hufthammer <karl@huftis.org>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-25 17:00+0100\n"
-"PO-Revision-Date: 2010-02-01 18:22+0100\n"
-"Last-Translator: Kristof Bal <kristof.bal@gmail.com>\n"
-"Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
+"PO-Revision-Date: 2010-05-24 11:14+0200\n"
+"Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
+"Language-Team: Norwegian Bokmål <i18n-nn@lister.ping.uio.no>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.0\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: rc.cpp:3
 msgid "General"
-msgstr "Algemeen"
+msgstr "Generelt"
 
 #: rc.cpp:6
 msgid "Touchpad"
-msgstr "Touchpad"
+msgstr "Styreplate"
 
 #: rc.cpp:9
 msgid "Touchpad is enabled."
-msgstr "Touchpad is ingeschakeld."
+msgstr "Styreplata er slått på."
 
 #: rc.cpp:12
 msgid "On"
-msgstr "Aan"
+msgstr "På"
 
 #: rc.cpp:15
 msgid "Touchpad is switched off."
-msgstr "Touchpad is uitgeschakeld."
+msgstr "Styreplata er slått av."
 
 #: rc.cpp:18
 msgid "Off"
-msgstr "Uit"
+msgstr "Av"
 
 #: rc.cpp:21
 msgid "Only tapping and scrolling is switched off."
-msgstr "Alleen tikken en scrollen is uitgeschakeld."
+msgstr "Berre trykking og rulling er slått av."
 
 #: rc.cpp:24
 msgid "Allow moving"
-msgstr "Bewegen toestaan"
+msgstr "Tillat flytting"
 
 #: rc.cpp:27
 msgid "Informations"
-msgstr "Informatie"
+msgstr "Informasjon"
 
 #: rc.cpp:30
 msgid "Touchpad Name:"
-msgstr "Touchpad-naam:"
+msgstr "Namn på styreplate:"
 
 #: rc.cpp:33
 msgid "Device not found"
-msgstr "Apparaat niet gevonden"
+msgstr "Fann inga eining"
 
 #: rc.cpp:36
 msgid "Smart Mode"
-msgstr "Slimme modus"
+msgstr "Smartmodus"
 
 #: rc.cpp:39
 msgid "Disable touchpad when typing"
-msgstr "Touchpad uitschakelen tijdens typen"
+msgstr "Slå av styreplata ved skriving"
 
 #: rc.cpp:42
 msgid "Re-enable delay:"
-msgstr "Vertraging voor opnieuw inschakelen:"
+msgstr "Pause før påslåing:"
 
 #: rc.cpp:45 rc.cpp:201 rc.cpp:213 rc.cpp:225 rc.cpp:234
 msgid "100"
@@ -83,267 +81,262 @@ msgstr "ms"
 
 #: rc.cpp:51
 msgid "Touch Sensitivity"
-msgstr "Aanraakgevoeligheid"
+msgstr "Trykkfølsemd"
 
 #: rc.cpp:54 rc.cpp:78 rc.cpp:114
 msgid "Low"
-msgstr "Laag"
+msgstr "Låg"
 
 #: rc.cpp:57 rc.cpp:72 rc.cpp:117
 msgid "High"
-msgstr "Hoog"
+msgstr "Høg"
 
 #: rc.cpp:60 rc.cpp:63
 msgid "Scrolling"
-msgstr "Scrollen"
+msgstr "Rulling"
 
 #: rc.cpp:66
 msgid "Enable vertical scrolling when dragging along the right edge."
-msgstr "Verticaal scrollen wanneer gesleept wordt langs de rechterzijde."
+msgstr "Slå på loddrett rulling ved draging langs høgre kant."
 
 #: rc.cpp:69
 msgid "Enable Vertical Scrolling"
-msgstr "Verticaal scrollen inschakelen"
+msgstr "Slå på loddrett rulling"
 
 #: rc.cpp:75
 msgid "Move distance of the finger for a vertical scroll event."
-msgstr "Wijzig de vingerafstand voor een verticale scroll-gebeurtenis."
+msgstr "Avstanden fingeren må flyttast før rulling."
 
 #: rc.cpp:81
 msgid "Enable horizontal scrolling when dragging along the bottom edge."
-msgstr "Horizontaal scrollen wanneer gesleept wordt langs de onderzijde."
+msgstr "Slå på vassrett rulling ved draging langs nedre kant."
 
 #: rc.cpp:84
 msgid "Enable Horizontal Scrolling"
-msgstr "Horizontaal scrollen inschakelen"
+msgstr "Slå på vassrett rulling"
 
 #: rc.cpp:87
 msgid "Advanced"
-msgstr "Geavanceerd"
+msgstr "Avansert"
 
 #: rc.cpp:90
 msgid "Enable edge scrolling to continue after the finger is released."
-msgstr "Scrollen langs de randen laten doorgaan na loslaten van touchpad."
+msgstr "La kantrullinga halda fram etter at fingeren er fjerna."
 
 #: rc.cpp:93
 msgid "Enable Coasting"
-msgstr "Coasting inschakelen"
+msgstr "Framhald av rulling"
 
 #: rc.cpp:96
 msgid "Coasting threshold scrolling speed."
-msgstr "Coasting-drempel voor scrollsnelheid."
+msgstr "Fartsgrense for framhaldsrulling."
 
 #: rc.cpp:99 rc.cpp:177
 msgid "Slow"
-msgstr "Langzaam"
+msgstr "Sakte"
 
 #: rc.cpp:102 rc.cpp:183
 msgid "Fast"
-msgstr "Snel"
+msgstr "Rask"
 
 #: rc.cpp:105
 msgid ""
 "Enable edge scrolling to continue while the finger stays in an edge corner."
-msgstr ""
-"Scrollen langs de randen laten doorgaan zolang de vinger zich in een hoek "
-"van het touchpad bevindt."
+msgstr "La kantrullinga halda fram når fingeren vert verande i eit hjørne."
 
 #: rc.cpp:108
 msgid "Enable Corner Coasting"
-msgstr "Rand-coasting inschakelen"
+msgstr "Framhald av rulling ved plassering i hjørne"
 
 #: rc.cpp:111
 msgid "Move distance of the finger for a horizontal scroll event."
-msgstr "Wijzig de vingerafstand voor een horizontale scroll-gebeurtenis."
+msgstr "Avstanden fingeren må flyttast før vassrett rulling."
 
 #: rc.cpp:120
 msgid ""
 "Enable vertical scrolling when dragging with two fingers anywhere on the "
 "touchpad."
 msgstr ""
-"Verticaal scrollen wanneer er met twee vingers over het touchpad gesleept "
-"wordt."
+"Slå på loddrett rulling ved draging av to fingrar på ein vilkårleg plass."
 
 #: rc.cpp:123
 msgid "Enable Vertical Two Fingers Scrolling"
-msgstr "Verticale tweevinger-scrolling inschakelen"
+msgstr "Slå på loddrett rulling med to fingrar"
 
 #: rc.cpp:126
 msgid ""
 "Enable horizontal scrolling when dragging with two fingers anywhere on the "
 "touchpad."
 msgstr ""
-"Horizontaal scrollen wanneer er met twee vingers over het touchpad gesleept "
-"wordt."
+"Slå på vassrett rulling ved draging av to fingrar på ein vilkårleg plass."
 
 #: rc.cpp:129
 msgid "Enable Horizontal Two Fingers Scrolling"
-msgstr "Horizontale tweevinger-scrolling inschakelen"
+msgstr "Slå på vassrett rulling med to fingrar"
 
 #: rc.cpp:132
 msgid "Circular Scrolling"
-msgstr "Circulair scrollen"
+msgstr "Sirkelrulling"
 
 #: rc.cpp:135
 msgid "If on, circular scrolling is used."
-msgstr "Indien ingeschakeld, wordt circulair scrollen gebruikt."
+msgstr "Viss det er kryssa av her, vert det brukt sirkelrulling."
 
 #: rc.cpp:138
 msgid "Enable Circular Scrolling"
-msgstr "Circulair scrollen inschakelen"
+msgstr "Bruk sirkelrulling"
 
 #: rc.cpp:141
 msgid "Trigger region on the touchpad to start circular scrolling."
-msgstr "Activeergebied op het touchpad om circulair scrollen te starten."
+msgstr "Utløysarområde på styreplata for å starta sirkelrulling."
 
 #: rc.cpp:144
 msgid "Triggered by:"
-msgstr "Geactiveerd door:"
+msgstr "Utløyst av:"
 
 #: rc.cpp:147
 msgid "All Corners"
-msgstr "Alle hoeken"
+msgstr "Alle hjørnene"
 
 #: rc.cpp:150
 msgid "Top Edge"
-msgstr "Bovenste rand"
+msgstr "Øvre kant"
 
 #: rc.cpp:153
 msgid "Top-Right Corner"
-msgstr "Rechter bovenhoek"
+msgstr "Øvre høgre hjørne"
 
 #: rc.cpp:156
 msgid "Right Edge"
-msgstr "Rechter rand"
+msgstr "Høgre kant"
 
 #: rc.cpp:159
 msgid "Bottom-Right Corner"
-msgstr "Rechter onderhoek "
+msgstr "Nedre høgre hjørne"
 
 #: rc.cpp:162
 msgid "Bottom Edge"
-msgstr "Onderste rand"
+msgstr "Nedre kant"
 
 #: rc.cpp:165
 msgid "Bottom-Left Corner"
-msgstr "Linker onderhoek"
+msgstr "Nedre venstre hjørne"
 
 #: rc.cpp:168
 msgid "Left Edge"
-msgstr "Linker rand"
+msgstr "Venstre kant"
 
 #: rc.cpp:171
 msgid "Top-Left Corner"
-msgstr "Linker bovenhoek"
+msgstr "Øvre venstre hjørne"
 
 #: rc.cpp:174
 msgid "No Trigger"
-msgstr "Geen activatie"
+msgstr "Ingen utløysar"
 
 #: rc.cpp:180
 msgid "Move angle (radians) of finger to generate a scroll event."
-msgstr "Wijzig de hoek van de vinger om een scroll-gebeurtenis op te roepen."
+msgstr "Rørslevinkelen (i radianar) for rulling."
 
 #: rc.cpp:186 rc.cpp:243
 msgid "Tapping"
-msgstr "Tikken"
+msgstr "Trykking"
 
 #: rc.cpp:189
 msgid "Emulation"
-msgstr "Emulatie"
+msgstr "Emulering"
 
 #: rc.cpp:192
 msgid "Enable Tapping"
-msgstr "Tikken inschakelen"
+msgstr "Slå på trykking"
 
 #: rc.cpp:195
 msgid "Timeout after a tap to recognize it as a single tap."
-msgstr "Time-out na een tik om deze als een enkele tik te herkennen."
+msgstr "Tid etter eit trykk for å oppfatta det som eit enkelttrykk."
 
 #: rc.cpp:198
 msgid "Single Tap Timeout:"
-msgstr "Time-out voor enkele tik:"
+msgstr "Tid for enkelttrykk:"
 
 #: rc.cpp:204 rc.cpp:216 rc.cpp:228
 msgid "ms."
-msgstr "ms."
+msgstr "ms"
 
 #: rc.cpp:207
 msgid "Maximum time (in milliseconds) for detecting a double tap."
-msgstr ""
-"Maximum tijd (in milliseconden) voor het detecteren van een dubbele tik."
+msgstr "Makstid (i millisekund) for oppdaging av dobbelttrykk."
 
 #: rc.cpp:210
 msgid "Double Tap Time:"
-msgstr "Tijd voor dubbele tik:"
+msgstr "Tid for dobbelttrykk:"
 
 #: rc.cpp:219
 msgid "The duration of the mouse click generated by tapping."
-msgstr "De duur van een muisklik opgeroepen door het tikken."
+msgstr "Tidslengd på museklikk laga ved trykking."
 
 #: rc.cpp:222
 msgid "Click Time:"
-msgstr "Kliktijd:"
+msgstr "Klikktid:"
 
 #: rc.cpp:231
 msgid "Max Tap Move:"
-msgstr "Maximale tik-verplaatsing:"
+msgstr "Maks klikkrørsle:"
 
 #: rc.cpp:237
 msgid "pts."
-msgstr "pts."
+msgstr "punkt"
 
 #: rc.cpp:240
 msgid "Buttons"
-msgstr "Knoppen"
+msgstr "Knappar"
 
 #: rc.cpp:246
 msgid "Right-Top Corner"
-msgstr "Rechter bovenhoek"
+msgstr "Øvre høgre hjørne"
 
 #: rc.cpp:249
 msgid "Right-Bottom Corner"
-msgstr "Rechter onderhoek"
+msgstr "Nedre høgre hjørne"
 
 #: rc.cpp:252
 msgid "Left-Top Corner"
-msgstr "Linker bovenhoek"
+msgstr "Øvre venstre hjørne"
 
 #: rc.cpp:255
 msgid "Left-Bottom Corner"
-msgstr "Linker onderhoek"
+msgstr "Nedre venstre hjørne"
 
 #: rc.cpp:258
 msgid "One Finger"
-msgstr "Een vinger"
+msgstr "Éin finger"
 
 #: rc.cpp:261
 msgid "Two Fingers"
-msgstr "Twee vingers"
+msgstr "To fingrar"
 
 #: rc.cpp:264
 msgid "Three Fingers"
-msgstr "Drie vingers"
+msgstr "Tre fingrar"
 
 #: rc.cpp:267
 msgid "means"
-msgstr "betekent"
+msgstr "metodar"
 
 #: rc.cpp:270
 msgid "None"
-msgstr "Geen"
+msgstr "Ingen"
 
 #: rc.cpp:273
 msgid "Left Button"
-msgstr "Linker knop"
+msgstr "Venstre knapp"
 
 #: rc.cpp:276
 msgid "Middle Button"
-msgstr "Middelste knop"
+msgstr "Midtknappen"
 
 #: rc.cpp:279
 msgid "Right Button"
-msgstr "Rechter knop"
+msgstr "Høgre knapp"
 
 #: kcmtouchpad.cpp:351
 msgid ""
@@ -352,9 +345,8 @@ msgid ""
 "depends upon the features provided by your touchpad hardware and the X "
 "server on which KDE is running."
 msgstr ""
-"<h1>Touchpad</h1> Met deze module kunt u de manier waarop uw touchpad  "
-"werkt aanpassen. Het daadwerkelijke effect van de ingestelde opties "
-"hangt af van de ondersteunde functies van uw touchpad en de X-server "
-"waarop KDE draait."
+"<h1>Styreplate</h1> Denne modulen lèt deg velja innstillingar for måten "
+"styreplata skal verka. Resultatet av innstillingane kjem an på kva "
+"funksjonar styreplata og X-tenaren KDE køyrer på støttar."
 
 

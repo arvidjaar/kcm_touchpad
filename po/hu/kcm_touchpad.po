@@ -1,70 +1,77 @@
+# KDE kcm_touchpad.
+# This file is put in the public domain.
+# Gergely Lonyai <aleph@mandriva.org>, 2010
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: kcm_touchpad\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: Diego Bello Carreño <dbello@gmail.com>\n"
-"Language-Team: Español <Spanish>\n"
+"POT-Creation-Date: 2009-10-25 17:00+0100\n"
+"PO-Revision-Date: 2010-05-12 16:32+0100\n"
+"Last-Translator: Gergely Lónyai <aleph@mandriva.org>\n"
+"Language-Team: Mandriva <aleph@mandriva.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Hungarian\n"
+"X-Poedit-Country: HUNGARY\n"
+"X-Poedit-SourceCharset: utf-8\n"
 
 #: rc.cpp:3
 msgid "General"
-msgstr "General"
+msgstr "Általános"
 
 #: rc.cpp:6
 msgid "Touchpad"
-msgstr "Touchpad"
+msgstr "Tapipad"
 
 #: rc.cpp:9
 msgid "Touchpad is enabled."
-msgstr "Touchpad está activo"
+msgstr "Tapipad engedélyezve."
 
 #: rc.cpp:12
 msgid "On"
-msgstr "Conectado"
+msgstr "Bekapcsolva"
 
 #: rc.cpp:15
 msgid "Touchpad is switched off."
-msgstr "Touchpad está apagado"
+msgstr "Tapipad kikapcsolva."
 
 #: rc.cpp:18
 msgid "Off"
-msgstr "Apagado"
+msgstr "Kikapcsolva"
 
 #: rc.cpp:21
 msgid "Only tapping and scrolling is switched off."
-msgstr "Solamente toque, se desactiva el desplazamiento."
+msgstr "Csak egérmozgatás, a görgetés kikapcsolva."
 
 #: rc.cpp:24
 msgid "Allow moving"
-msgstr "Permitir movimiento"
+msgstr "Mozgás engedélyezve"
 
 #: rc.cpp:27
 msgid "Informations"
-msgstr "Informaciones"
+msgstr "Információk"
 
 #: rc.cpp:30
 msgid "Touchpad Name:"
-msgstr "Nombre del Touchpad:"
+msgstr "Tapipad név"
 
 #: rc.cpp:33
 msgid "Device not found"
-msgstr "Aparato no encontrado"
+msgstr "Eszköz nem található"
 
 #: rc.cpp:36
 msgid "Smart Mode"
-msgstr "Modo inteligente"
+msgstr "Gyorsmód"
 
 #: rc.cpp:39
 msgid "Disable touchpad when typing"
-msgstr "Desactivar touchpad mientras se teclea"
+msgstr "Tapipad letiltása gépelés közben"
 
 #: rc.cpp:42
 msgid "Re-enable delay:"
-msgstr "Re-activar retraso:"
+msgstr "Várakozás újraengedélyezése:"
 
 #: rc.cpp:45
 #: rc.cpp:201
@@ -76,187 +83,187 @@ msgstr "100"
 
 #: rc.cpp:48
 msgid "ms"
-msgstr "milisegundos"
+msgstr "ms"
 
 #: rc.cpp:51
 msgid "Touch Sensitivity"
-msgstr "Sensibilidad"
+msgstr "Érzékenységi küszöb"
 
 #: rc.cpp:54
 #: rc.cpp:78
 #: rc.cpp:114
 msgid "Low"
-msgstr "Baja"
+msgstr "Alacsony"
 
 #: rc.cpp:57
 #: rc.cpp:72
 #: rc.cpp:117
 msgid "High"
-msgstr "Alta"
+msgstr "Magas"
 
 #: rc.cpp:60
 #: rc.cpp:63
 msgid "Scrolling"
-msgstr "Desplazamiento"
+msgstr "Görgetés"
 
 #: rc.cpp:66
 msgid "Enable vertical scrolling when dragging along the right edge."
-msgstr "Habilitar desplazamiento vertical cuando se arrastra sobre el borde derecho."
+msgstr "A függőleges görgetés engedélyezése, ha a tapipad alsó szélére helyezi az ujját."
 
 #: rc.cpp:69
 msgid "Enable Vertical Scrolling"
-msgstr "Habilitar desplazamiento vertical"
+msgstr "Függőleges görgetés engedélyezése"
 
 #: rc.cpp:75
 msgid "Move distance of the finger for a vertical scroll event."
-msgstr "Distancia de movimiento del dedo para un evento de desplazamiento vertical."
+msgstr "Mozgassa az ujját a függőleges görgetéshez."
 
 #: rc.cpp:81
 msgid "Enable horizontal scrolling when dragging along the bottom edge."
-msgstr "Habilitar desplazamiento horizontal al arrastrar por el borde inferior"
+msgstr "A vízszintes görgetés engedélyezése, ha a tapipad alsó szélére helyezi az ujját."
 
 #: rc.cpp:84
 msgid "Enable Horizontal Scrolling"
-msgstr "Habilitar desplazamiento horizontal"
+msgstr "Vízszintes görgetés engedélyezése"
 
 #: rc.cpp:87
 msgid "Advanced"
-msgstr "Avanzado"
+msgstr "Bővebben"
 
 #: rc.cpp:90
 msgid "Enable edge scrolling to continue after the finger is released."
-msgstr "Habilitar que el desplazamiento de borde continúe después de que el dedo se retire."
+msgstr "Engedélyezi a görgetés folytatását miután az ujj felemelkedett."
 
 #: rc.cpp:93
 msgid "Enable Coasting"
-msgstr "Habilitar desplazamiento contínuo"
+msgstr "Siklás engedélyezése"
 
 #: rc.cpp:96
 msgid "Coasting threshold scrolling speed."
-msgstr "Límite de velocidad de desplazamiento contínuo"
+msgstr "A sikláshoz szükséges minimális sebesség."
 
 #: rc.cpp:99
 #: rc.cpp:177
 msgid "Slow"
-msgstr "Lento"
+msgstr "Lassú"
 
 #: rc.cpp:102
 #: rc.cpp:183
 msgid "Fast"
-msgstr "Rápido"
+msgstr "Gyors"
 
 #: rc.cpp:105
 msgid "Enable edge scrolling to continue while the finger stays in an edge corner."
-msgstr "Habilitar que el desplazamiento de borde continúe mientras se mantiene el dedo en una esquina."
+msgstr "Engedélyezi a görgetés folytatását, ha a tapipad szélén az ujj elért a sarokhoz."
 
 #: rc.cpp:108
 msgid "Enable Corner Coasting"
-msgstr "Habilitar desplazamiento contínuo en las esquinas"
+msgstr "Sarok siklás engedélyezése"
 
 #: rc.cpp:111
 msgid "Move distance of the finger for a horizontal scroll event."
-msgstr "Distancia de movimiento del dedo para un evento de desplazamiento horizontal."
+msgstr "Mozgassa az ujját a vízszintes görgetéshez."
 
 #: rc.cpp:120
 msgid "Enable vertical scrolling when dragging with two fingers anywhere on the touchpad."
-msgstr "Habilitar desplazamiento vertical cuando se arrastra con dos dedos en cualquier lugar del touchpad."
+msgstr "A függőleges görgetés engedélyezése, ha a tapipadon bárhová lehelyezi egyszerre két ujját."
 
 #: rc.cpp:123
 msgid "Enable Vertical Two Fingers Scrolling"
-msgstr "Habilitar desplazamiento vertical de dos dedos"
+msgstr "Két ujjas függőleges görgetés engedélyezése"
 
 #: rc.cpp:126
 msgid "Enable horizontal scrolling when dragging with two fingers anywhere on the touchpad."
-msgstr "Habilitar desplazamiento horizontal cuando se arrastra con dos dedos en cualquier lugar del touchpad."
+msgstr "A vízszintes görgetés engedélyezése, ha a tapipadon bárhová lehelyezi egyszerre két ujját."
 
 #: rc.cpp:129
 msgid "Enable Horizontal Two Fingers Scrolling"
-msgstr "Habilitar desplazamiento horizontal de dos dedos"
+msgstr "Két ujjas vízszintes görgetés engedélyezése"
 
 #: rc.cpp:132
 msgid "Circular Scrolling"
-msgstr "Desplazamiento circular"
+msgstr "Körkörös görgetés"
 
 #: rc.cpp:135
 msgid "If on, circular scrolling is used."
-msgstr "Si está encendiro, se usará el desplazamiento circular."
+msgstr "Ha be van kapcsolva, akkor a körkörös görgetés lesz haználva."
 
 #: rc.cpp:138
 msgid "Enable Circular Scrolling"
-msgstr "Habilitar desplazamiento circular"
+msgstr "Körkörös görgetés engedélyezése"
 
 #: rc.cpp:141
 msgid "Trigger region on the touchpad to start circular scrolling."
-msgstr "Región del touchpad para iniciar desplazamiento circular."
+msgstr "Engedi a tapipadon a körkörös görgetés elkezdését."
 
 #: rc.cpp:144
 msgid "Triggered by:"
-msgstr "Gatillado por:"
+msgstr "Kioldva: "
 
 #: rc.cpp:147
 msgid "All Corners"
-msgstr "Todas las esquinas"
+msgstr "Minden sarkok"
 
 #: rc.cpp:150
 msgid "Top Edge"
-msgstr "Borde superior"
+msgstr "Felső szél"
 
 #: rc.cpp:153
 msgid "Top-Right Corner"
-msgstr "Esquina superior derecha"
+msgstr "Jobb felső sarok"
 
 #: rc.cpp:156
 msgid "Right Edge"
-msgstr "Borde derecho"
+msgstr "Jobb szél"
 
 #: rc.cpp:159
 msgid "Bottom-Right Corner"
-msgstr "Esquina inferior derecha"
+msgstr "Jobb alsó sarok"
 
 #: rc.cpp:162
 msgid "Bottom Edge"
-msgstr "Borde inferior"
+msgstr "Alsó szél"
 
 #: rc.cpp:165
 msgid "Bottom-Left Corner"
-msgstr "Esquina inferior izquierda"
+msgstr "Bal alsó sarok"
 
 #: rc.cpp:168
 msgid "Left Edge"
-msgstr "Borde izquierdo"
+msgstr "Bal szél"
 
 #: rc.cpp:171
 msgid "Top-Left Corner"
-msgstr "Esquina superior izquierda"
+msgstr "Bal felső sarok"
 
 #: rc.cpp:174
 msgid "No Trigger"
-msgstr "Sin gatillador"
+msgstr "Nincs görgő"
 
 #: rc.cpp:180
 msgid "Move angle (radians) of finger to generate a scroll event."
-msgstr "Ángulo de movimiento de dedo (en radianes) para generar un evento de desplazamiento."
+msgstr "Mozgassa az ujját körkörösen a görgetéshez."
 
 #: rc.cpp:186
 #: rc.cpp:243
 msgid "Tapping"
-msgstr "Golpecitos"
+msgstr "Érintés"
 
 #: rc.cpp:189
 msgid "Emulation"
-msgstr "Emulación"
+msgstr "Emuláció"
 
 #: rc.cpp:192
 msgid "Enable Tapping"
-msgstr "Permitir dar toques"
+msgstr "Érintőtábla engedélyezése"
 
 #: rc.cpp:195
 msgid "Timeout after a tap to recognize it as a single tap."
-msgstr "Tiempo de espera tras un golpecito para reconocerlo como un único golpecito."
+msgstr "Az az idő, ami után egy újabb kattintásnak lesz felismerve a következő érintés."
 
 #: rc.cpp:198
 msgid "Single Tap Timeout:"
-msgstr "Tiempo de espera para un único golpecito"
+msgstr "Egy érintés határideje:"
 
 #: rc.cpp:204
 #: rc.cpp:216
@@ -266,81 +273,81 @@ msgstr "ms."
 
 #: rc.cpp:207
 msgid "Maximum time (in milliseconds) for detecting a double tap."
-msgstr "Tiempo máximo (en milisegundos) para detectar dos golpecitos seguidos."
+msgstr "Az az időkorlát (ezredmásodpercben), amin belül érzékeli a dupla érintést."
 
 #: rc.cpp:210
 msgid "Double Tap Time:"
-msgstr "Tiempo para dos golpecitos:"
+msgstr "Dupla kattintás ideje:"
 
 #: rc.cpp:219
 msgid "The duration of the mouse click generated by tapping."
-msgstr "La duración del click de ratón generado por los golpecitos."
+msgstr "A tapipadon generált egérkattintás időtartama."
 
 #: rc.cpp:222
 msgid "Click Time:"
-msgstr "Tiempo de click:"
+msgstr "Kattintás ideje:"
 
 #: rc.cpp:231
 msgid "Max Tap Move:"
-msgstr "Máximo movimiento de toque:"
+msgstr "Maximális mozgás"
 
 #: rc.cpp:237
 msgid "pts."
-msgstr "pts."
+msgstr "Pts"
 
 #: rc.cpp:240
 msgid "Buttons"
-msgstr "Botones"
+msgstr "Gombok"
 
 #: rc.cpp:246
 msgid "Right-Top Corner"
-msgstr "Esquina superior derecha"
+msgstr "Jobb felső sarok"
 
 #: rc.cpp:249
 msgid "Right-Bottom Corner"
-msgstr "Esquina inferior derecha"
+msgstr "Jobb alsó sarok"
 
 #: rc.cpp:252
 msgid "Left-Top Corner"
-msgstr "Esquina superior izquierda"
+msgstr "Bal felső sarok"
 
 #: rc.cpp:255
 msgid "Left-Bottom Corner"
-msgstr "Esquina inferior izquierda"
+msgstr "Bal alsó sarok"
 
 #: rc.cpp:258
 msgid "One Finger"
-msgstr "Un sólo dedo"
+msgstr "Egyujjas"
 
 #: rc.cpp:261
 msgid "Two Fingers"
-msgstr "Dos dedos"
+msgstr "Kétujjas"
 
 #: rc.cpp:264
 msgid "Three Fingers"
-msgstr "Tres dedos"
+msgstr "Háromujjas"
 
 #: rc.cpp:267
 msgid "means"
-msgstr "significa"
+msgstr "eszközök"
 
 #: rc.cpp:270
 msgid "None"
-msgstr "Ninguno"
+msgstr "Egyik sem"
 
 #: rc.cpp:273
 msgid "Left Button"
-msgstr "Botón izquierdo"
+msgstr "Bal gomb"
 
 #: rc.cpp:276
 msgid "Middle Button"
-msgstr "Botón central"
+msgstr "Középső gomb"
 
 #: rc.cpp:279
 msgid "Right Button"
-msgstr "Botón derecho"
+msgstr "Jobb gomb"
 
 #: kcmtouchpad.cpp:351
 msgid "<h1>Touchpad</h1> This module allows you to choose options for the way in which your touchpad works. The actual effect of setting these options depends upon the features provided by your touchpad hardware and the X server on which KDE is running."
-msgstr "<h1>Touchpad</h1> Este módulo permite elegir cómo funciona el touchpad. El método para calibrar sus funciones depende de las características que soporte su hardware y del servidor X sobre el que KDE esté corriendo."
+msgstr "<h1>Tapipad</h1> Ez a modul lehetővé teszi, hogy a tapipad jellemzőit a saját igényeihez igazítsa. Az elérhető hatások függnek a tapipad hardverén, és a KDE-t futtató X kiszolgálón keresztül elérhető funkcióktól."
 

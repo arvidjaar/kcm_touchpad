@@ -1,0 +1,365 @@
+# This file is put in the public domain.
+#
+# Glentadakis Dimitrios <dglent@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-10-25 17:00+0100\n"
+"PO-Revision-Date: 2010-05-24 12:29+0200\n"
+"Last-Translator: Glentadakis Dimitrios <dglent@gmail.com>\n"
+"Language-Team: Greek <translators_team@mandrivalinux.gr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: rc.cpp:3
+msgid "General"
+msgstr "Γενικά"
+
+#: rc.cpp:6
+msgid "Touchpad"
+msgstr "Επιφάνεια αφής"
+
+#: rc.cpp:9
+msgid "Touchpad is enabled."
+msgstr "Η επιφάνεια αφής είναι ενεργοποιημένη"
+
+#: rc.cpp:12
+msgid "On"
+msgstr "Ενεργό"
+
+#: rc.cpp:15
+msgid "Touchpad is switched off."
+msgstr "Η επιφάνεια αφής είναι απενεργοποιημένη"
+
+#: rc.cpp:18
+msgid "Off"
+msgstr "Κλειστό"
+
+#: rc.cpp:21
+msgid "Only tapping and scrolling is switched off."
+msgstr "Μόνο το πάτημα και η κύλιση είναι απενεργοποιημένα."
+
+#: rc.cpp:24
+msgid "Allow moving"
+msgstr "Επιτρέπεται η μετακίνηση"
+
+#: rc.cpp:27
+msgid "Informations"
+msgstr "Πληροφορίες"
+
+#: rc.cpp:30
+msgid "Touchpad Name:"
+msgstr "Όνομα επιφάνειας αφής:"
+
+#: rc.cpp:33
+msgid "Device not found"
+msgstr "Η συσκευή δεν βρέθηκε"
+
+#: rc.cpp:36
+msgid "Smart Mode"
+msgstr "Έξυπνη λειτουργία"
+
+#: rc.cpp:39
+msgid "Disable touchpad when typing"
+msgstr "Απενεργοποίηση της επιφάνειας αφής κατά την πληκτρολόγηση"
+
+#: rc.cpp:42
+msgid "Re-enable delay:"
+msgstr "Επανενεργοποίησης καθυστέρησης:"
+
+#: rc.cpp:45 rc.cpp:201 rc.cpp:213 rc.cpp:225 rc.cpp:234
+msgid "100"
+msgstr "100"
+
+#: rc.cpp:48
+msgid "ms"
+msgstr "ms"
+
+#: rc.cpp:51
+msgid "Touch Sensitivity"
+msgstr "Ευαισθησία αφής"
+
+#: rc.cpp:54 rc.cpp:78 rc.cpp:114
+msgid "Low"
+msgstr "Χαμηλή"
+
+#: rc.cpp:57 rc.cpp:72 rc.cpp:117
+msgid "High"
+msgstr "Υψηλή"
+
+#: rc.cpp:60 rc.cpp:63
+msgid "Scrolling"
+msgstr "Κύλιση"
+
+#: rc.cpp:66
+msgid "Enable vertical scrolling when dragging along the right edge."
+msgstr "Ενεργοποίηση κάθετης κύλισης κατά το σύρσιμο στην δεξιά άκρη. "
+
+#: rc.cpp:69
+msgid "Enable Vertical Scrolling"
+msgstr "Ενεργοποίηση της κάθετης κύλισης"
+
+#: rc.cpp:75
+msgid "Move distance of the finger for a vertical scroll event."
+msgstr "Απόσταση κίνησης του δαχτύλου για ένα γεγονός κάθετης κύλισης."
+
+#: rc.cpp:81
+msgid "Enable horizontal scrolling when dragging along the bottom edge."
+msgstr ""
+"Ενεργοποίηση της οριζόντιας κύλισης στο σύρσιμο κατά μήκος της κάτω άκρης."
+
+#: rc.cpp:84
+msgid "Enable Horizontal Scrolling"
+msgstr "Ενεργοποίηση οριζόντιας κύλισης"
+
+#: rc.cpp:87
+msgid "Advanced"
+msgstr "Για προχωρημένους"
+
+#: rc.cpp:90
+msgid "Enable edge scrolling to continue after the finger is released."
+msgstr ""
+"Ενεργοποίηση συνέχισης της κύλισης στα άκρα μετά την απομάκρυνση του "
+"δαχτύλου."
+
+#: rc.cpp:93
+msgid "Enable Coasting"
+msgstr "Ενεργοποίηση αυτόματης κύλισης"
+
+#: rc.cpp:96
+msgid "Coasting threshold scrolling speed."
+msgstr "Ταχύτητα αυτόματης κύλισης"
+
+#: rc.cpp:99 rc.cpp:177
+msgid "Slow"
+msgstr "Αργό"
+
+#: rc.cpp:102 rc.cpp:183
+msgid "Fast"
+msgstr "Γρήγορο"
+
+#: rc.cpp:105
+msgid ""
+"Enable edge scrolling to continue while the finger stays in an edge corner."
+msgstr ""
+"Ενεργοποίηση της συνέχισης κύλισης στα άκρα όταν το δάχτυλο παραμένει στην "
+"άκρη της γωνίας."
+
+#: rc.cpp:108
+msgid "Enable Corner Coasting"
+msgstr "Ενεργοποίηση αυτόματης κύλισης γωνιών"
+
+#: rc.cpp:111
+msgid "Move distance of the finger for a horizontal scroll event."
+msgstr "Απόσταση κίνησης του δαχτύλου για ένα γεγονός οριζόντιας κύλισης"
+
+#: rc.cpp:120
+msgid ""
+"Enable vertical scrolling when dragging with two fingers anywhere on the "
+"touchpad."
+msgstr ""
+"Ενεργοποίηση της καθέτου κύλισης κατά το σύρσιμο με δύο δάχτυλα σε "
+"οποιοδήποτε σημείο της επιφάνειας αφής."
+
+#: rc.cpp:123
+msgid "Enable Vertical Two Fingers Scrolling"
+msgstr "Ενεργοποίηση κάθετης κύλισης με δύο δάχτυλα"
+
+#: rc.cpp:126
+msgid ""
+"Enable horizontal scrolling when dragging with two fingers anywhere on the "
+"touchpad."
+msgstr ""
+"Ενεργοποίηση της οριζόντιας κύλισης κατά το σύρσιμο με δύο δάχτυλα σε "
+"οποιοδήποτε σημείο της επιφάνειας αφής."
+
+#: rc.cpp:129
+msgid "Enable Horizontal Two Fingers Scrolling"
+msgstr "Ενεργοποίηση οριζόντιας κύλισης με δύο δάχτυλα"
+
+#: rc.cpp:132
+msgid "Circular Scrolling"
+msgstr "Κυκλική κύλιση"
+
+#: rc.cpp:135
+msgid "If on, circular scrolling is used."
+msgstr "Αν είναι ενεργοποιημένο, χρησιμοποιείται η κυκλική κίνηση."
+
+#: rc.cpp:138
+msgid "Enable Circular Scrolling"
+msgstr "Ενεργοποίηση κυκλικής κύλισης"
+
+#: rc.cpp:141
+msgid "Trigger region on the touchpad to start circular scrolling."
+msgstr "Ενεργή ζώνη στην επιφάνεια αφής για την έναρξη κυκλικής κύλισης."
+
+#: rc.cpp:144
+msgid "Triggered by:"
+msgstr "Ενεργοποιημένο από:"
+
+#: rc.cpp:147
+msgid "All Corners"
+msgstr "Όλες οι γωνίες"
+
+#: rc.cpp:150
+msgid "Top Edge"
+msgstr "Πάνω άκρη"
+
+#: rc.cpp:153
+msgid "Top-Right Corner"
+msgstr "Πάνω δεξιά γωνία"
+
+#: rc.cpp:156
+msgid "Right Edge"
+msgstr "Δεξιά άκρη"
+
+#: rc.cpp:159
+msgid "Bottom-Right Corner"
+msgstr "Κάτω δεξιά γωνία"
+
+#: rc.cpp:162
+msgid "Bottom Edge"
+msgstr "Κάτω άκρη"
+
+#: rc.cpp:165
+msgid "Bottom-Left Corner"
+msgstr "Κάτω αριστερή γωνία"
+
+#: rc.cpp:168
+msgid "Left Edge"
+msgstr "Αριστερή άκρη"
+
+#: rc.cpp:171
+msgid "Top-Left Corner"
+msgstr "Πάνω αριστερή γωνία"
+
+#: rc.cpp:174
+msgid "No Trigger"
+msgstr "Χωρίς ενεργοποίηση"
+
+#: rc.cpp:180
+msgid "Move angle (radians) of finger to generate a scroll event."
+msgstr ""
+"Γωνία μετακίνησης (radians) δαχτύλου για δημιουργία γεγονότος κύλισης."
+
+#: rc.cpp:186 rc.cpp:243
+msgid "Tapping"
+msgstr "Πάτημα"
+
+#: rc.cpp:189
+msgid "Emulation"
+msgstr "Προσομοίωση"
+
+#: rc.cpp:192
+msgid "Enable Tapping"
+msgstr "Ενεργοποίηση πατήματος"
+
+#: rc.cpp:195
+msgid "Timeout after a tap to recognize it as a single tap."
+msgstr ""
+"Χρονικό όριο μετά από ένα χτύπημα για την ανίχνευση του ως μονό χτύπημα."
+
+#: rc.cpp:198
+msgid "Single Tap Timeout:"
+msgstr "Χρονικό όριο μονού χτυπήματος:"
+
+#: rc.cpp:204 rc.cpp:216 rc.cpp:228
+msgid "ms."
+msgstr "ms."
+
+#: rc.cpp:207
+msgid "Maximum time (in milliseconds) for detecting a double tap."
+msgstr ""
+"Μέγιστος χρόνος (σε χιλιοστά του δευτερολέπτου) για την ανίχνευση διπλού "
+"χτυπήματος. "
+
+#: rc.cpp:210
+msgid "Double Tap Time:"
+msgstr "Καθυστέρηση διπλού χτυπήματος"
+
+#: rc.cpp:219
+msgid "The duration of the mouse click generated by tapping."
+msgstr "Η διάρκεια του κλικ ποντικιού που δημιουργήθηκε από ένα χτύπημα."
+
+#: rc.cpp:222
+msgid "Click Time:"
+msgstr "Καθυστέρηση του κλικ:"
+
+#: rc.cpp:231
+msgid "Max Tap Move:"
+msgstr "Μέγιστη μετακίνηση χτυπήματος:"
+
+#: rc.cpp:237
+msgid "pts."
+msgstr "pts."
+
+#: rc.cpp:240
+msgid "Buttons"
+msgstr "Κουμπιά"
+
+#: rc.cpp:246
+msgid "Right-Top Corner"
+msgstr "Επάνω αριστερή γωνία"
+
+#: rc.cpp:249
+msgid "Right-Bottom Corner"
+msgstr "Κάτω δεξιά γωνία"
+
+#: rc.cpp:252
+msgid "Left-Top Corner"
+msgstr "Πάνω αριστερή γωνία"
+
+#: rc.cpp:255
+msgid "Left-Bottom Corner"
+msgstr "Κάτω αριστερή γωνία"
+
+#: rc.cpp:258
+msgid "One Finger"
+msgstr "Ένα δάχτυλο"
+
+#: rc.cpp:261
+msgid "Two Fingers"
+msgstr "Δύο δάχτυλα"
+
+#: rc.cpp:264
+msgid "Three Fingers"
+msgstr "Τρία δάχτυλα"
+
+#: rc.cpp:267
+msgid "means"
+msgstr "εννοεί"
+
+#: rc.cpp:270
+msgid "None"
+msgstr "Κανένα"
+
+#: rc.cpp:273
+msgid "Left Button"
+msgstr "Αριστερό κουμπί"
+
+#: rc.cpp:276
+msgid "Middle Button"
+msgstr "Μεσαίο κουμπί"
+
+#: rc.cpp:279
+msgid "Right Button"
+msgstr "Δεξί κουμπί"
+
+#: kcmtouchpad.cpp:351
+msgid ""
+"<h1>Touchpad</h1> This module allows you to choose options for the way in "
+"which your touchpad works. The actual effect of setting these options "
+"depends upon the features provided by your touchpad hardware and the X "
+"server on which KDE is running."
+msgstr ""
+"<h1>Επιφάνεια αφής</h1> Αυτό το άρθρωμα σας επιτρέπει να επιλέξετε τις "
+"παραμέτρους με τις οποίες θα λειτουργεί η επιφάνεια αφής. Η πραγματική "
+"επίδραση που θα έχουν οι ρυθμίσεις, εξαρτάται από τα χαρακτηριστικά που "
+"παρέχει ο κατασκευαστής της επιφάνειας αφής και του εξυπηρετητή X στον "
+"οποίο εκτελείται το KDE."
+
+
