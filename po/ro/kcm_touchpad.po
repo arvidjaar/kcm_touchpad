@@ -1,0 +1,391 @@
+# Translation of kcm_touchpad.po to Romanian
+# Copyright (c) 1999-2010 Mandriva
+#
+# Vă rugăm să nu actualizaţi fișierul, cu excepția cazului în care sînteți
+# sigur de calitatea traducerii dumneavoastră, de gramatică și de ortografie.
+# Acestea din urmă sînt de prea multe ori aproximative.
+# Corectarea lor ulterioară nu are nici un alt rezultat decît acela de
+# pierdere de timp pentru toata lumea.
+#
+# VĂ RUGĂM SĂ RESPECTAȚI SEMNELE DE PUNCTUAȚIE ALE LIMBII ROMÂNE!
+#
+# Nu suprimați spațiul care urmează unui semn de punctuație de sfîrșit de
+# frază; trebuie respectată versiunea originală. În acest caz, este foarte
+# probabil ca programul să afișeze un mesaj la sfîrșit. Suprimînd acel spațiu,
+# cele două cuvintele vor fi afișate legat.
+#
+# Traduceți de manieră INTELIGENTĂ (de ce nu și prin comparație cu alte
+# traduceri ale acestui fișier în alte limbi) și nu cuvînt cu cuvînt. Unele
+# astfel de traduceri nu au nici un sens în limba română.
+#
+# ATENȚIE LA FONTURILE UTILIZATE! Pentru a reda corect diacriticele folosiți
+# disponerea tastaturii românească standard, codarea de caractere UTF-8 și
+# asigurați-vă că fonturile utilizate sînt cu virgulițe, NU CU SEDILE!
+# Exemplu:
+#          font incorect (cu sedile): şŞ ţŢ
+#          font corect (cu virgule): șȘ țȚ
+#
+# Pentru a vă asigura că folosiți fonturile corecte, vizitați:
+#          http://i18n.ro/Fonturi_romanesti/testare
+#
+# Vă mulțumim pentru înțelegere.
+#                                                       Echipa de traducători,
+#                                                       www.Mandrivausers.ro
+#
+# Traducători de-a lungul timpului:
+# Florin Cătălin RUSSEN <cfrussen@yahoo.co.uk>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kcm_touchpad\n"
+"Report-Msgid-Bugs-To: https://qa.mandriva.com\n"
+"POT-Creation-Date: 2009-10-25 17:00+0100\n"
+"PO-Revision-Date: 2010-05-17 19:10+0100\n"
+"Last-Translator: Cătălin Florin RUSSEN <cfrussen@yahoo.co.uk>\n"
+"Language-Team: Romanian <cooker-i18n@mandrivalinux.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3;plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
+"2:1))\n"
+
+#: rc.cpp:3
+msgid "General"
+msgstr "General"
+
+#: rc.cpp:6
+msgid "Touchpad"
+msgstr "Tușieră tactilă"
+
+#: rc.cpp:9
+msgid "Touchpad is enabled."
+msgstr "Tușiera tactilă este dezactivată."
+
+#: rc.cpp:12
+msgid "On"
+msgstr "Pornește"
+
+#: rc.cpp:15
+msgid "Touchpad is switched off."
+msgstr "Tușiera tactilă este oprită."
+
+#: rc.cpp:18
+msgid "Off"
+msgstr "Oprește"
+
+#: rc.cpp:21
+msgid "Only tapping and scrolling is switched off."
+msgstr "Sînt oprite numai apăsarea și derularea."
+
+#: rc.cpp:24
+msgid "Allow moving"
+msgstr "Permite mutarea"
+
+#: rc.cpp:27
+msgid "Informations"
+msgstr "Informații"
+
+#: rc.cpp:30
+msgid "Touchpad Name:"
+msgstr "Numele tușierei tactile:"
+
+#: rc.cpp:33
+msgid "Device not found"
+msgstr "Dispozitiv negăsit"
+
+#: rc.cpp:36
+msgid "Smart Mode"
+msgstr "Mod inteligent"
+
+#: rc.cpp:39
+msgid "Disable touchpad when typing"
+msgstr "Dezactivează tușiera tactilă cînd se tastează"
+
+#: rc.cpp:42
+msgid "Re-enable delay:"
+msgstr "Întîrziere de reactivare:"
+
+#: rc.cpp:45 rc.cpp:201 rc.cpp:213 rc.cpp:225 rc.cpp:234
+msgid "100"
+msgstr "100"
+
+#: rc.cpp:48
+msgid "ms"
+msgstr "ms"
+
+#: rc.cpp:51
+msgid "Touch Sensitivity"
+msgstr "Sensibilitate la atingere"
+
+#: rc.cpp:54 rc.cpp:78 rc.cpp:114
+msgid "Low"
+msgstr "Joasă"
+
+#: rc.cpp:57 rc.cpp:72 rc.cpp:117
+msgid "High"
+msgstr "Înaltă"
+
+#: rc.cpp:60 rc.cpp:63
+msgid "Scrolling"
+msgstr "Defilare"
+
+#: rc.cpp:66
+msgid "Enable vertical scrolling when dragging along the right edge."
+msgstr "Activează defilarea pe verticală la glisarea pe muchia dreaptă. "
+
+#: rc.cpp:69
+msgid "Enable Vertical Scrolling"
+msgstr "Activează defilarea verticală"
+
+#: rc.cpp:75
+msgid "Move distance of the finger for a vertical scroll event."
+msgstr "Distanța de mișcare a degetului pentru o defilare verticală."
+
+#: rc.cpp:81
+msgid "Enable horizontal scrolling when dragging along the bottom edge."
+msgstr "Activează defilarea pe orizontală la glisarea pe muchia de jos."
+
+#: rc.cpp:84
+msgid "Enable Horizontal Scrolling"
+msgstr "Activează defilarea orizontală"
+
+#: rc.cpp:87
+msgid "Advanced"
+msgstr "Avansat"
+
+#: rc.cpp:90
+msgid "Enable edge scrolling to continue after the finger is released."
+msgstr ""
+"Activează continuarea defilării după ce ați luat degetul de pe muchie. "
+
+#: rc.cpp:93
+msgid "Enable Coasting"
+msgstr "Activează defilarea continuă"
+
+#: rc.cpp:96
+msgid "Coasting threshold scrolling speed."
+msgstr "Limita de viteză a defilării continue."
+
+#: rc.cpp:99 rc.cpp:177
+msgid "Slow"
+msgstr "Încet"
+
+#: rc.cpp:102 rc.cpp:183
+msgid "Fast"
+msgstr "Rapid"
+
+#: rc.cpp:105
+msgid ""
+"Enable edge scrolling to continue while the finger stays in an edge corner."
+msgstr ""
+"Activează continuarea defilării cînd puneți degetul în colțul unei muchii."
+
+#: rc.cpp:108
+msgid "Enable Corner Coasting"
+msgstr "Activează defilarea continuă în colțuri"
+
+#: rc.cpp:111
+msgid "Move distance of the finger for a horizontal scroll event."
+msgstr "Distanța de mișcare a degetului pentru o defilare orizontală."
+
+#: rc.cpp:120
+msgid ""
+"Enable vertical scrolling when dragging with two fingers anywhere on the "
+"touchpad."
+msgstr ""
+"Activează defilarea verticală cînd glisați vertical cu două degete pe "
+"suprafața tușierei tactile."
+
+#: rc.cpp:123
+msgid "Enable Vertical Two Fingers Scrolling"
+msgstr "Activează defilarea verticală cu două degete"
+
+#: rc.cpp:126
+msgid ""
+"Enable horizontal scrolling when dragging with two fingers anywhere on the "
+"touchpad."
+msgstr ""
+"Activează defilarea orizontală cînd glisați orizontal cu două degete pe "
+"suprafața tușierei tactile."
+
+#: rc.cpp:129
+msgid "Enable Horizontal Two Fingers Scrolling"
+msgstr "Activează defilarea orizontală cu două degete"
+
+#: rc.cpp:132
+msgid "Circular Scrolling"
+msgstr "Defilare circulară"
+
+#: rc.cpp:135
+msgid "If on, circular scrolling is used."
+msgstr "Dacă este activată, se utilizează defilarea circulară."
+
+#: rc.cpp:138
+msgid "Enable Circular Scrolling"
+msgstr "Activează defilarea circulară"
+
+#: rc.cpp:141
+msgid "Trigger region on the touchpad to start circular scrolling."
+msgstr ""
+"Regiunea declanșoare a tușierei tactile pentru lansarea unei defilări "
+"circulare."
+
+#: rc.cpp:144
+msgid "Triggered by:"
+msgstr "Declanșat de:"
+
+#: rc.cpp:147
+msgid "All Corners"
+msgstr "Toate colțurile"
+
+#: rc.cpp:150
+msgid "Top Edge"
+msgstr "Muchia de sus"
+
+#: rc.cpp:153
+msgid "Top-Right Corner"
+msgstr "Colțul din dreapta-sus"
+
+#: rc.cpp:156
+msgid "Right Edge"
+msgstr "Muchia dreaptă"
+
+#: rc.cpp:159
+msgid "Bottom-Right Corner"
+msgstr "Colțul din dreapta-jos"
+
+#: rc.cpp:162
+msgid "Bottom Edge"
+msgstr "Muchia de jos"
+
+#: rc.cpp:165
+msgid "Bottom-Left Corner"
+msgstr "Colțul din stînga-jos"
+
+#: rc.cpp:168
+msgid "Left Edge"
+msgstr "Muchia stîngă"
+
+#: rc.cpp:171
+msgid "Top-Left Corner"
+msgstr "Colțul din stînga-sus"
+
+#: rc.cpp:174
+msgid "No Trigger"
+msgstr "Fără declanșor"
+
+#: rc.cpp:180
+msgid "Move angle (radians) of finger to generate a scroll event."
+msgstr "Unghiul de mișcare (radiani) al degetului pentru a genera o defilare."
+
+#: rc.cpp:186 rc.cpp:243
+msgid "Tapping"
+msgstr "Atingere"
+
+#: rc.cpp:189
+msgid "Emulation"
+msgstr "Emulare"
+
+#: rc.cpp:192
+msgid "Enable Tapping"
+msgstr "Activează atingerea"
+
+#: rc.cpp:195
+msgid "Timeout after a tap to recognize it as a single tap."
+msgstr "Durata după care o atingere este recunoscută ca o singură atingere."
+
+#: rc.cpp:198
+msgid "Single Tap Timeout:"
+msgstr "Expirare atingere singură:"
+
+#: rc.cpp:204 rc.cpp:216 rc.cpp:228
+msgid "ms."
+msgstr "ms."
+
+#: rc.cpp:207
+msgid "Maximum time (in milliseconds) for detecting a double tap."
+msgstr "Durata maximă (în milisecunde) pentru detectarea unei atingeri duble."
+
+#: rc.cpp:210
+msgid "Double Tap Time:"
+msgstr "Durată atingere dublă:"
+
+#: rc.cpp:219
+msgid "The duration of the mouse click generated by tapping."
+msgstr "Durata unui clic de maus generat de atingere."
+
+#: rc.cpp:222
+msgid "Click Time:"
+msgstr "Durată clic:"
+
+#: rc.cpp:231
+msgid "Max Tap Move:"
+msgstr "Mișcare maximă atingere:"
+
+#: rc.cpp:237
+msgid "pts."
+msgstr "pts."
+
+#: rc.cpp:240
+msgid "Buttons"
+msgstr "Butoane"
+
+#: rc.cpp:246
+msgid "Right-Top Corner"
+msgstr "Colțul din dreapta-sus"
+
+#: rc.cpp:249
+msgid "Right-Bottom Corner"
+msgstr "Colțul din dreapta-jos"
+
+#: rc.cpp:252
+msgid "Left-Top Corner"
+msgstr "Colțul din stînga-sus"
+
+#: rc.cpp:255
+msgid "Left-Bottom Corner"
+msgstr "Colțul din stînga-jos"
+
+#: rc.cpp:258
+msgid "One Finger"
+msgstr "Un deget"
+
+#: rc.cpp:261
+msgid "Two Fingers"
+msgstr "Două degete"
+
+#: rc.cpp:264
+msgid "Three Fingers"
+msgstr "Trei degete"
+
+#: rc.cpp:267
+msgid "means"
+msgstr "înseamnă"
+
+#: rc.cpp:270
+msgid "None"
+msgstr "Neant"
+
+#: rc.cpp:273
+msgid "Left Button"
+msgstr "Butonul stîng"
+
+#: rc.cpp:276
+msgid "Middle Button"
+msgstr "Butonul mijlociu"
+
+#: rc.cpp:279
+msgid "Right Button"
+msgstr "Butonul drept"
+
+#: kcmtouchpad.cpp:351
+msgid ""
+"<h1>Touchpad</h1> This module allows you to choose options for the way in "
+"which your touchpad works. The actual effect of setting these options "
+"depends upon the features provided by your touchpad hardware and the X "
+"server on which KDE is running."
+msgstr ""
+"<h1>Tușieră tactilă</h1> Acest modul vă permite să alegeți opțiunile pentru "
+"felul în care funcționează tușiera tactilă. Efectul real al configurării "
+"acestor opțiuni depinde de funcționalitățile materiale furnizate de tușiera "
+"voastră tactilă și de serverul X peste care rulează KDE."

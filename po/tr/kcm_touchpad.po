@@ -1,70 +1,76 @@
+# Turkish translations for external-l package
+# external-l paketi için Türkçe çeviriler.
+# This file is put in the public domain.
+# atilla <atilla_ontas@mandriva.com>, 2010.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: external-l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: Diego Bello Carreño <dbello@gmail.com>\n"
-"Language-Team: Español <Spanish>\n"
+"POT-Creation-Date: 2009-10-25 17:00+0100\n"
+"PO-Revision-Date: 2010-05-14 00:21+0200\n"
+"Last-Translator: Atilla ÖNTAŞ <atilla_ontas@mandriva.org>\n"
+"Language-Team: Turkish\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: rc.cpp:3
 msgid "General"
-msgstr "General"
+msgstr "Genel"
 
 #: rc.cpp:6
 msgid "Touchpad"
-msgstr "Touchpad"
+msgstr "Fare Tablası"
 
 #: rc.cpp:9
 msgid "Touchpad is enabled."
-msgstr "Touchpad está activo"
+msgstr "Fare tablası etkinleştirildi."
 
 #: rc.cpp:12
 msgid "On"
-msgstr "Conectado"
+msgstr "Açık"
 
 #: rc.cpp:15
 msgid "Touchpad is switched off."
-msgstr "Touchpad está apagado"
+msgstr "Fare tablası şu anda kapalı"
 
 #: rc.cpp:18
 msgid "Off"
-msgstr "Apagado"
+msgstr "Kapalı"
 
 #: rc.cpp:21
 msgid "Only tapping and scrolling is switched off."
-msgstr "Solamente toque, se desactiva el desplazamiento."
+msgstr "Sadece tıklama ve kaydırma kapatıldı."
 
 #: rc.cpp:24
 msgid "Allow moving"
-msgstr "Permitir movimiento"
+msgstr "Taşımaya izin ver"
 
 #: rc.cpp:27
 msgid "Informations"
-msgstr "Informaciones"
+msgstr "Bilgiler"
 
 #: rc.cpp:30
 msgid "Touchpad Name:"
-msgstr "Nombre del Touchpad:"
+msgstr "Fare tablası Adı: "
 
 #: rc.cpp:33
 msgid "Device not found"
-msgstr "Aparato no encontrado"
+msgstr "Aygıt bulunamadı"
 
 #: rc.cpp:36
 msgid "Smart Mode"
-msgstr "Modo inteligente"
+msgstr "Akıllı kip"
 
 #: rc.cpp:39
 msgid "Disable touchpad when typing"
-msgstr "Desactivar touchpad mientras se teclea"
+msgstr "Yazma esnasında fare tablasını kapat"
 
 #: rc.cpp:42
 msgid "Re-enable delay:"
-msgstr "Re-activar retraso:"
+msgstr "Gecikmeyi yeniden etkinleştir:"
 
 #: rc.cpp:45
 #: rc.cpp:201
@@ -76,187 +82,187 @@ msgstr "100"
 
 #: rc.cpp:48
 msgid "ms"
-msgstr "milisegundos"
+msgstr "ms"
 
 #: rc.cpp:51
 msgid "Touch Sensitivity"
-msgstr "Sensibilidad"
+msgstr "Fare Tablası Duyarlılığı"
 
 #: rc.cpp:54
 #: rc.cpp:78
 #: rc.cpp:114
 msgid "Low"
-msgstr "Baja"
+msgstr "Düşük"
 
 #: rc.cpp:57
 #: rc.cpp:72
 #: rc.cpp:117
 msgid "High"
-msgstr "Alta"
+msgstr "Yüksek"
 
 #: rc.cpp:60
 #: rc.cpp:63
 msgid "Scrolling"
-msgstr "Desplazamiento"
+msgstr "Kaydırma"
 
 #: rc.cpp:66
 msgid "Enable vertical scrolling when dragging along the right edge."
-msgstr "Habilitar desplazamiento vertical cuando se arrastra sobre el borde derecho."
+msgstr "Sağ köşe boyunca sürüklenirken dikey kaydırmayı etkinleştir."
 
 #: rc.cpp:69
 msgid "Enable Vertical Scrolling"
-msgstr "Habilitar desplazamiento vertical"
+msgstr "Dikey Kaydırmayı Etkinleştir"
 
 #: rc.cpp:75
 msgid "Move distance of the finger for a vertical scroll event."
-msgstr "Distancia de movimiento del dedo para un evento de desplazamiento vertical."
+msgstr ""
 
 #: rc.cpp:81
 msgid "Enable horizontal scrolling when dragging along the bottom edge."
-msgstr "Habilitar desplazamiento horizontal al arrastrar por el borde inferior"
+msgstr ""
 
 #: rc.cpp:84
 msgid "Enable Horizontal Scrolling"
-msgstr "Habilitar desplazamiento horizontal"
+msgstr "Yatay Kaydırmayı Etkinleştir"
 
 #: rc.cpp:87
 msgid "Advanced"
-msgstr "Avanzado"
+msgstr "Gelişmiş"
 
 #: rc.cpp:90
 msgid "Enable edge scrolling to continue after the finger is released."
-msgstr "Habilitar que el desplazamiento de borde continúe después de que el dedo se retire."
+msgstr ""
 
 #: rc.cpp:93
 msgid "Enable Coasting"
-msgstr "Habilitar desplazamiento contínuo"
+msgstr "Aşağıya Kaydırmayı Etkinleştir"
 
 #: rc.cpp:96
 msgid "Coasting threshold scrolling speed."
-msgstr "Límite de velocidad de desplazamiento contínuo"
+msgstr ""
 
 #: rc.cpp:99
 #: rc.cpp:177
 msgid "Slow"
-msgstr "Lento"
+msgstr "Yavaş"
 
 #: rc.cpp:102
 #: rc.cpp:183
 msgid "Fast"
-msgstr "Rápido"
+msgstr "Hızlı"
 
 #: rc.cpp:105
 msgid "Enable edge scrolling to continue while the finger stays in an edge corner."
-msgstr "Habilitar que el desplazamiento de borde continúe mientras se mantiene el dedo en una esquina."
+msgstr ""
 
 #: rc.cpp:108
 msgid "Enable Corner Coasting"
-msgstr "Habilitar desplazamiento contínuo en las esquinas"
+msgstr "Köşelere Kaydırmayı Etkinleştir"
 
 #: rc.cpp:111
 msgid "Move distance of the finger for a horizontal scroll event."
-msgstr "Distancia de movimiento del dedo para un evento de desplazamiento horizontal."
+msgstr ""
 
 #: rc.cpp:120
 msgid "Enable vertical scrolling when dragging with two fingers anywhere on the touchpad."
-msgstr "Habilitar desplazamiento vertical cuando se arrastra con dos dedos en cualquier lugar del touchpad."
+msgstr ""
 
 #: rc.cpp:123
 msgid "Enable Vertical Two Fingers Scrolling"
-msgstr "Habilitar desplazamiento vertical de dos dedos"
+msgstr ""
 
 #: rc.cpp:126
 msgid "Enable horizontal scrolling when dragging with two fingers anywhere on the touchpad."
-msgstr "Habilitar desplazamiento horizontal cuando se arrastra con dos dedos en cualquier lugar del touchpad."
+msgstr ""
 
 #: rc.cpp:129
 msgid "Enable Horizontal Two Fingers Scrolling"
-msgstr "Habilitar desplazamiento horizontal de dos dedos"
+msgstr ""
 
 #: rc.cpp:132
 msgid "Circular Scrolling"
-msgstr "Desplazamiento circular"
+msgstr "Dairesel Kaydırma"
 
 #: rc.cpp:135
 msgid "If on, circular scrolling is used."
-msgstr "Si está encendiro, se usará el desplazamiento circular."
+msgstr ""
 
 #: rc.cpp:138
 msgid "Enable Circular Scrolling"
-msgstr "Habilitar desplazamiento circular"
+msgstr "Dairesel Kaydırmayı Etkinleştir"
 
 #: rc.cpp:141
 msgid "Trigger region on the touchpad to start circular scrolling."
-msgstr "Región del touchpad para iniciar desplazamiento circular."
+msgstr ""
 
 #: rc.cpp:144
 msgid "Triggered by:"
-msgstr "Gatillado por:"
+msgstr "Tetikleyen:"
 
 #: rc.cpp:147
 msgid "All Corners"
-msgstr "Todas las esquinas"
+msgstr "Bütün Köşeler:"
 
 #: rc.cpp:150
 msgid "Top Edge"
-msgstr "Borde superior"
+msgstr "Üst Kenar"
 
 #: rc.cpp:153
 msgid "Top-Right Corner"
-msgstr "Esquina superior derecha"
+msgstr "Sağ-Üst köşe"
 
 #: rc.cpp:156
 msgid "Right Edge"
-msgstr "Borde derecho"
+msgstr "Sağ Kenar"
 
 #: rc.cpp:159
 msgid "Bottom-Right Corner"
-msgstr "Esquina inferior derecha"
+msgstr "Sağ-Alt köşe"
 
 #: rc.cpp:162
 msgid "Bottom Edge"
-msgstr "Borde inferior"
+msgstr "Alt Kenar"
 
 #: rc.cpp:165
 msgid "Bottom-Left Corner"
-msgstr "Esquina inferior izquierda"
+msgstr "Sol-Alt köşe"
 
 #: rc.cpp:168
 msgid "Left Edge"
-msgstr "Borde izquierdo"
+msgstr "Sol Kenar"
 
 #: rc.cpp:171
 msgid "Top-Left Corner"
-msgstr "Esquina superior izquierda"
+msgstr "Üst-Sol Köşe"
 
 #: rc.cpp:174
 msgid "No Trigger"
-msgstr "Sin gatillador"
+msgstr "Tetitleme Yok"
 
 #: rc.cpp:180
 msgid "Move angle (radians) of finger to generate a scroll event."
-msgstr "Ángulo de movimiento de dedo (en radianes) para generar un evento de desplazamiento."
+msgstr ""
 
 #: rc.cpp:186
 #: rc.cpp:243
 msgid "Tapping"
-msgstr "Golpecitos"
+msgstr ""
 
 #: rc.cpp:189
 msgid "Emulation"
-msgstr "Emulación"
+msgstr "Öykünme"
 
 #: rc.cpp:192
 msgid "Enable Tapping"
-msgstr "Permitir dar toques"
+msgstr "Tıklamayı Etkinleştir"
 
 #: rc.cpp:195
 msgid "Timeout after a tap to recognize it as a single tap."
-msgstr "Tiempo de espera tras un golpecito para reconocerlo como un único golpecito."
+msgstr ""
 
 #: rc.cpp:198
 msgid "Single Tap Timeout:"
-msgstr "Tiempo de espera para un único golpecito"
+msgstr "Basit Tıklama Zamanaşımı \"%s\""
 
 #: rc.cpp:204
 #: rc.cpp:216
@@ -266,23 +272,23 @@ msgstr "ms."
 
 #: rc.cpp:207
 msgid "Maximum time (in milliseconds) for detecting a double tap."
-msgstr "Tiempo máximo (en milisegundos) para detectar dos golpecitos seguidos."
+msgstr ""
 
 #: rc.cpp:210
 msgid "Double Tap Time:"
-msgstr "Tiempo para dos golpecitos:"
+msgstr "Çift Tıklama Süresi:"
 
 #: rc.cpp:219
 msgid "The duration of the mouse click generated by tapping."
-msgstr "La duración del click de ratón generado por los golpecitos."
+msgstr ""
 
 #: rc.cpp:222
 msgid "Click Time:"
-msgstr "Tiempo de click:"
+msgstr "Tıklama Süresi:"
 
 #: rc.cpp:231
 msgid "Max Tap Move:"
-msgstr "Máximo movimiento de toque:"
+msgstr "En Fazla Tıklama Hareketi:"
 
 #: rc.cpp:237
 msgid "pts."
@@ -290,57 +296,57 @@ msgstr "pts."
 
 #: rc.cpp:240
 msgid "Buttons"
-msgstr "Botones"
+msgstr "Düğmeler"
 
 #: rc.cpp:246
 msgid "Right-Top Corner"
-msgstr "Esquina superior derecha"
+msgstr "Sağ-Üst köşe"
 
 #: rc.cpp:249
 msgid "Right-Bottom Corner"
-msgstr "Esquina inferior derecha"
+msgstr "Sağ-Alt köşe"
 
 #: rc.cpp:252
 msgid "Left-Top Corner"
-msgstr "Esquina superior izquierda"
+msgstr "Sol-Üst köşe"
 
 #: rc.cpp:255
 msgid "Left-Bottom Corner"
-msgstr "Esquina inferior izquierda"
+msgstr "Sol-Alt köşe"
 
 #: rc.cpp:258
 msgid "One Finger"
-msgstr "Un sólo dedo"
+msgstr "Tek Parmak:"
 
 #: rc.cpp:261
 msgid "Two Fingers"
-msgstr "Dos dedos"
+msgstr "İki Parmak:"
 
 #: rc.cpp:264
 msgid "Three Fingers"
-msgstr "Tres dedos"
+msgstr "Üç Parmak:"
 
 #: rc.cpp:267
 msgid "means"
-msgstr "significa"
+msgstr "orta"
 
 #: rc.cpp:270
 msgid "None"
-msgstr "Ninguno"
+msgstr "None"
 
 #: rc.cpp:273
 msgid "Left Button"
-msgstr "Botón izquierdo"
+msgstr "Sol Düğme"
 
 #: rc.cpp:276
 msgid "Middle Button"
-msgstr "Botón central"
+msgstr "Orta Düğme"
 
 #: rc.cpp:279
 msgid "Right Button"
-msgstr "Botón derecho"
+msgstr "Sağ Düğme"
 
 #: kcmtouchpad.cpp:351
 msgid "<h1>Touchpad</h1> This module allows you to choose options for the way in which your touchpad works. The actual effect of setting these options depends upon the features provided by your touchpad hardware and the X server on which KDE is running."
-msgstr "<h1>Touchpad</h1> Este módulo permite elegir cómo funciona el touchpad. El método para calibrar sus funciones depende de las características que soporte su hardware y del servidor X sobre el que KDE esté corriendo."
+msgstr ""
 

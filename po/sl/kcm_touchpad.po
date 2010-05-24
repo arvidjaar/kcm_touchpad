@@ -1,77 +1,76 @@
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is put in the public domain.
 #
-# Sander Pientka <cumulus0007@gmail.com>, 2009.
-# Kristof Bal <kristof.bal@gmail.com>, 2010.
+# Jure Repinc <jlp@holodeck1.com>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-10-25 17:00+0100\n"
-"PO-Revision-Date: 2010-02-01 18:22+0100\n"
-"Last-Translator: Kristof Bal <kristof.bal@gmail.com>\n"
-"Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
+"PO-Revision-Date: 2010-05-13 02:24+0200\n"
+"Last-Translator: Jure Repinc <jlp@holodeck1.com>\n"
+"Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.0\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 "
+"|| n%100==4 ? 3 : 0);\n"
 
 #: rc.cpp:3
 msgid "General"
-msgstr "Algemeen"
+msgstr "Splošno"
 
 #: rc.cpp:6
 msgid "Touchpad"
-msgstr "Touchpad"
+msgstr "Sledilna ploščica"
 
 #: rc.cpp:9
 msgid "Touchpad is enabled."
-msgstr "Touchpad is ingeschakeld."
+msgstr "Sledilna ploščica je vklopljena."
 
 #: rc.cpp:12
 msgid "On"
-msgstr "Aan"
+msgstr "Vklopljena"
 
 #: rc.cpp:15
 msgid "Touchpad is switched off."
-msgstr "Touchpad is uitgeschakeld."
+msgstr "Sledilna ploščica je izklopljena."
 
 #: rc.cpp:18
 msgid "Off"
-msgstr "Uit"
+msgstr "Izklopljena"
 
 #: rc.cpp:21
 msgid "Only tapping and scrolling is switched off."
-msgstr "Alleen tikken en scrollen is uitgeschakeld."
+msgstr "Izklopljeno je samo tapkanje in drsenje."
 
 #: rc.cpp:24
 msgid "Allow moving"
-msgstr "Bewegen toestaan"
+msgstr "Omogoči premikanje"
 
 #: rc.cpp:27
 msgid "Informations"
-msgstr "Informatie"
+msgstr "Podatki"
 
 #: rc.cpp:30
 msgid "Touchpad Name:"
-msgstr "Touchpad-naam:"
+msgstr "Ime sledilne ploščice:"
 
 #: rc.cpp:33
 msgid "Device not found"
-msgstr "Apparaat niet gevonden"
+msgstr "Naprave ni moč najti"
 
 #: rc.cpp:36
 msgid "Smart Mode"
-msgstr "Slimme modus"
+msgstr "Pametni način"
 
 #: rc.cpp:39
 msgid "Disable touchpad when typing"
-msgstr "Touchpad uitschakelen tijdens typen"
+msgstr "Med tipkanjem onemogoči sledilno ploščico"
 
 #: rc.cpp:42
 msgid "Re-enable delay:"
-msgstr "Vertraging voor opnieuw inschakelen:"
+msgstr "Zamik ponovnega vklopa:"
 
 #: rc.cpp:45 rc.cpp:201 rc.cpp:213 rc.cpp:225 rc.cpp:234
 msgid "100"
@@ -83,186 +82,184 @@ msgstr "ms"
 
 #: rc.cpp:51
 msgid "Touch Sensitivity"
-msgstr "Aanraakgevoeligheid"
+msgstr "Občutljivost na dotik"
 
 #: rc.cpp:54 rc.cpp:78 rc.cpp:114
 msgid "Low"
-msgstr "Laag"
+msgstr "Nizka"
 
 #: rc.cpp:57 rc.cpp:72 rc.cpp:117
 msgid "High"
-msgstr "Hoog"
+msgstr "Visoka"
 
 #: rc.cpp:60 rc.cpp:63
 msgid "Scrolling"
-msgstr "Scrollen"
+msgstr "Drsenje"
 
 #: rc.cpp:66
 msgid "Enable vertical scrolling when dragging along the right edge."
-msgstr "Verticaal scrollen wanneer gesleept wordt langs de rechterzijde."
+msgstr "Omogoči navpično drsenje za vleko vzdolž desnega robu."
 
 #: rc.cpp:69
 msgid "Enable Vertical Scrolling"
-msgstr "Verticaal scrollen inschakelen"
+msgstr "Omogoči navpično drsenje"
 
 #: rc.cpp:75
 msgid "Move distance of the finger for a vertical scroll event."
-msgstr "Wijzig de vingerafstand voor een verticale scroll-gebeurtenis."
+msgstr "Razdalja premika prsta za dogodek navpičnega drsenja."
 
 #: rc.cpp:81
 msgid "Enable horizontal scrolling when dragging along the bottom edge."
-msgstr "Horizontaal scrollen wanneer gesleept wordt langs de onderzijde."
+msgstr "Omogoči vodoravno drsenje za vleko vzdolž spodnjega robu."
 
 #: rc.cpp:84
 msgid "Enable Horizontal Scrolling"
-msgstr "Horizontaal scrollen inschakelen"
+msgstr "Omogoči vodoravno drsenje"
 
 #: rc.cpp:87
 msgid "Advanced"
-msgstr "Geavanceerd"
+msgstr "Napredno"
 
 #: rc.cpp:90
 msgid "Enable edge scrolling to continue after the finger is released."
-msgstr "Scrollen langs de randen laten doorgaan na loslaten van touchpad."
+msgstr "Po dvigu prsta naj se drsenje nadaljuje."
 
 #: rc.cpp:93
 msgid "Enable Coasting"
-msgstr "Coasting inschakelen"
+msgstr "Omogoči nadaljevanje"
 
 #: rc.cpp:96
 msgid "Coasting threshold scrolling speed."
-msgstr "Coasting-drempel voor scrollsnelheid."
+msgstr "Najmanjša hitrost drsenja za nadaljevanje."
 
 #: rc.cpp:99 rc.cpp:177
 msgid "Slow"
-msgstr "Langzaam"
+msgstr "Počasna"
 
 #: rc.cpp:102 rc.cpp:183
 msgid "Fast"
-msgstr "Snel"
+msgstr "Hitra"
 
 #: rc.cpp:105
 msgid ""
 "Enable edge scrolling to continue while the finger stays in an edge corner."
-msgstr ""
-"Scrollen langs de randen laten doorgaan zolang de vinger zich in een hoek "
-"van het touchpad bevindt."
+msgstr "Ko prst obstane v kotu, naj se drsenje nadaljuje."
 
 #: rc.cpp:108
 msgid "Enable Corner Coasting"
-msgstr "Rand-coasting inschakelen"
+msgstr "Omogoči nadaljevanje v kotu"
 
 #: rc.cpp:111
 msgid "Move distance of the finger for a horizontal scroll event."
-msgstr "Wijzig de vingerafstand voor een horizontale scroll-gebeurtenis."
+msgstr "Razdalja premika prsta za dogodek vodoravnega drsenja."
 
 #: rc.cpp:120
 msgid ""
 "Enable vertical scrolling when dragging with two fingers anywhere on the "
 "touchpad."
 msgstr ""
-"Verticaal scrollen wanneer er met twee vingers over het touchpad gesleept "
-"wordt."
+"Omogoči navpično drsenje za vleko z dvema prstoma kjerkoli po sledilni "
+"ploščici."
 
 #: rc.cpp:123
 msgid "Enable Vertical Two Fingers Scrolling"
-msgstr "Verticale tweevinger-scrolling inschakelen"
+msgstr "Omogoči dvo-prstno navpično drsenje"
 
 #: rc.cpp:126
 msgid ""
 "Enable horizontal scrolling when dragging with two fingers anywhere on the "
 "touchpad."
 msgstr ""
-"Horizontaal scrollen wanneer er met twee vingers over het touchpad gesleept "
-"wordt."
+"Omogoči vodoravno drsenje za vleko z dvema prstoma kjerkoli po sledilni "
+"ploščici."
 
 #: rc.cpp:129
 msgid "Enable Horizontal Two Fingers Scrolling"
-msgstr "Horizontale tweevinger-scrolling inschakelen"
+msgstr "Omogoči dvo-prstno vodoravno drsenje"
 
 #: rc.cpp:132
 msgid "Circular Scrolling"
-msgstr "Circulair scrollen"
+msgstr "Krožno drsenje"
 
 #: rc.cpp:135
 msgid "If on, circular scrolling is used."
-msgstr "Indien ingeschakeld, wordt circulair scrollen gebruikt."
+msgstr "Če je omogočeno, se uporabi krožno drsenje."
 
 #: rc.cpp:138
 msgid "Enable Circular Scrolling"
-msgstr "Circulair scrollen inschakelen"
+msgstr "Omogoči krožno drsenje"
 
 #: rc.cpp:141
 msgid "Trigger region on the touchpad to start circular scrolling."
-msgstr "Activeergebied op het touchpad om circulair scrollen te starten."
+msgstr "Del sledilne ploščice, na katerem se sproži krožno drsenje."
 
 #: rc.cpp:144
 msgid "Triggered by:"
-msgstr "Geactiveerd door:"
+msgstr "Sproži se:"
 
 #: rc.cpp:147
 msgid "All Corners"
-msgstr "Alle hoeken"
+msgstr "V vseh kotih"
 
 #: rc.cpp:150
 msgid "Top Edge"
-msgstr "Bovenste rand"
+msgstr "Ob zgornjem robu"
 
 #: rc.cpp:153
 msgid "Top-Right Corner"
-msgstr "Rechter bovenhoek"
+msgstr "V zgornjem desnem kotu"
 
 #: rc.cpp:156
 msgid "Right Edge"
-msgstr "Rechter rand"
+msgstr "Ob desnem robu"
 
 #: rc.cpp:159
 msgid "Bottom-Right Corner"
-msgstr "Rechter onderhoek "
+msgstr "V spodnjem desnem kotu"
 
 #: rc.cpp:162
 msgid "Bottom Edge"
-msgstr "Onderste rand"
+msgstr "Ob spodnjem robu"
 
 #: rc.cpp:165
 msgid "Bottom-Left Corner"
-msgstr "Linker onderhoek"
+msgstr "V spodnjem levem kotu"
 
 #: rc.cpp:168
 msgid "Left Edge"
-msgstr "Linker rand"
+msgstr "Ob levem robu"
 
 #: rc.cpp:171
 msgid "Top-Left Corner"
-msgstr "Linker bovenhoek"
+msgstr "V zgornjem levem kotu"
 
 #: rc.cpp:174
 msgid "No Trigger"
-msgstr "Geen activatie"
+msgstr "Nikjer"
 
 #: rc.cpp:180
 msgid "Move angle (radians) of finger to generate a scroll event."
-msgstr "Wijzig de hoek van de vinger om een scroll-gebeurtenis op te roepen."
+msgstr "Kot (v radianih) premika prsta za dogodek drsenja."
 
 #: rc.cpp:186 rc.cpp:243
 msgid "Tapping"
-msgstr "Tikken"
+msgstr "Tapkanje"
 
 #: rc.cpp:189
 msgid "Emulation"
-msgstr "Emulatie"
+msgstr "Posnemanje"
 
 #: rc.cpp:192
 msgid "Enable Tapping"
-msgstr "Tikken inschakelen"
+msgstr "Omogoči tapkanje"
 
 #: rc.cpp:195
 msgid "Timeout after a tap to recognize it as a single tap."
-msgstr "Time-out na een tik om deze als een enkele tik te herkennen."
+msgstr "Čas po dotiku, ko se naslednji dotik obravnava kot nov."
 
 #: rc.cpp:198
 msgid "Single Tap Timeout:"
-msgstr "Time-out voor enkele tik:"
+msgstr "Čas za enojni dotik:"
 
 #: rc.cpp:204 rc.cpp:216 rc.cpp:228
 msgid "ms."
@@ -270,80 +267,79 @@ msgstr "ms."
 
 #: rc.cpp:207
 msgid "Maximum time (in milliseconds) for detecting a double tap."
-msgstr ""
-"Maximum tijd (in milliseconden) voor het detecteren van een dubbele tik."
+msgstr "Najdaljši čas (v milisekundah) za zaznavo dvojnega dotika."
 
 #: rc.cpp:210
 msgid "Double Tap Time:"
-msgstr "Tijd voor dubbele tik:"
+msgstr "Čas za dvojni dotik:"
 
 #: rc.cpp:219
 msgid "The duration of the mouse click generated by tapping."
-msgstr "De duur van een muisklik opgeroepen door het tikken."
+msgstr "Trajanje miškinega klika, ki ga ustvari tapkanje."
 
 #: rc.cpp:222
 msgid "Click Time:"
-msgstr "Kliktijd:"
+msgstr "Trajanje klika:"
 
 #: rc.cpp:231
 msgid "Max Tap Move:"
-msgstr "Maximale tik-verplaatsing:"
+msgstr "Največji premik tapkanja:"
 
 #: rc.cpp:237
 msgid "pts."
-msgstr "pts."
+msgstr "točk"
 
 #: rc.cpp:240
 msgid "Buttons"
-msgstr "Knoppen"
+msgstr "Gumbi"
 
 #: rc.cpp:246
 msgid "Right-Top Corner"
-msgstr "Rechter bovenhoek"
+msgstr "Zgornji desni kot"
 
 #: rc.cpp:249
 msgid "Right-Bottom Corner"
-msgstr "Rechter onderhoek"
+msgstr "Spodnji desni kot"
 
 #: rc.cpp:252
 msgid "Left-Top Corner"
-msgstr "Linker bovenhoek"
+msgstr "Zgornji levi kot"
 
 #: rc.cpp:255
 msgid "Left-Bottom Corner"
-msgstr "Linker onderhoek"
+msgstr "Spodnji levi kot"
 
 #: rc.cpp:258
 msgid "One Finger"
-msgstr "Een vinger"
+msgstr "En prst"
 
 #: rc.cpp:261
 msgid "Two Fingers"
-msgstr "Twee vingers"
+msgstr "Dva prsta"
 
 #: rc.cpp:264
 msgid "Three Fingers"
-msgstr "Drie vingers"
+msgstr "Trije prsti"
 
 #: rc.cpp:267
 msgid "means"
-msgstr "betekent"
+msgstr "Pomen:"
 
 #: rc.cpp:270
 msgid "None"
-msgstr "Geen"
+msgstr "Nič"
 
 #: rc.cpp:273
 msgid "Left Button"
-msgstr "Linker knop"
+msgstr "Levi gumb"
 
 #: rc.cpp:276
 msgid "Middle Button"
-msgstr "Middelste knop"
+msgstr "Srednji gumb"
 
 #: rc.cpp:279
 msgid "Right Button"
-msgstr "Rechter knop"
+msgstr "Desni gumb"
 
 #: kcmtouchpad.cpp:351
 msgid ""
@@ -352,9 +348,7 @@ msgid ""
 "depends upon the features provided by your touchpad hardware and the X "
 "server on which KDE is running."
 msgstr ""
-"<h1>Touchpad</h1> Met deze module kunt u de manier waarop uw touchpad  "
-"werkt aanpassen. Het daadwerkelijke effect van de ingestelde opties "
-"hangt af van de ondersteunde functies van uw touchpad en de X-server "
-"waarop KDE draait."
-
+"<h1>Sledilna ploščica</h1> Ta modul vam omogoča nastaviti možnosti "
+"delovanja vaše sledilne ploščice. Dejanski učinek nastavitev je odvisen od "
+"strojnih zmožnosti vaše sledilne ploščice in grafičnega strežnika."
 

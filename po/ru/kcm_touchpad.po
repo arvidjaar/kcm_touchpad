@@ -1,0 +1,351 @@
+# SOME DESCRIPTIVE TITLE.
+# This file is put in the public domain.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-10-25 17:00+0100\n"
+"PO-Revision-Date: 2010-05-22 17:51+0300\n"
+"Last-Translator: Alexander Kazancev <kazancas@mandriva.ru>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: rc.cpp:3
+msgid "General"
+msgstr "Основные"
+
+#: rc.cpp:6
+msgid "Touchpad"
+msgstr "Тачпад"
+
+#: rc.cpp:9
+msgid "Touchpad is enabled."
+msgstr "Тачпад включен."
+
+#: rc.cpp:12
+msgid "On"
+msgstr "Вкл"
+
+#: rc.cpp:15
+msgid "Touchpad is switched off."
+msgstr "Тачпад выключен."
+
+#: rc.cpp:18
+msgid "Off"
+msgstr "Выкл"
+
+#: rc.cpp:21
+msgid "Only tapping and scrolling is switched off."
+msgstr "Только касание и прокрутка выключены."
+
+#: rc.cpp:24
+msgid "Allow moving"
+msgstr "Позволить перемещение"
+
+#: rc.cpp:27
+msgid "Informations"
+msgstr "Информация"
+
+#: rc.cpp:30
+msgid "Touchpad Name:"
+msgstr "Имя панели:"
+
+#: rc.cpp:33
+msgid "Device not found"
+msgstr "Устройство не найдено"
+
+#: rc.cpp:36
+msgid "Smart Mode"
+msgstr "Умный режим"
+
+#: rc.cpp:39
+msgid "Disable touchpad when typing"
+msgstr "Выключать тачпад при печати"
+
+#: rc.cpp:42
+msgid "Re-enable delay:"
+msgstr "Задержка повт. вкл.:"
+
+#: rc.cpp:45
+#: rc.cpp:201
+#: rc.cpp:213
+#: rc.cpp:225
+#: rc.cpp:234
+msgid "100"
+msgstr "100"
+
+#: rc.cpp:48
+msgid "ms"
+msgstr "мс"
+
+#: rc.cpp:51
+msgid "Touch Sensitivity"
+msgstr "Чувствительность касания"
+
+#: rc.cpp:54
+#: rc.cpp:78
+#: rc.cpp:114
+msgid "Low"
+msgstr "Низкая"
+
+#: rc.cpp:57
+#: rc.cpp:72
+#: rc.cpp:117
+msgid "High"
+msgstr "Высокая"
+
+#: rc.cpp:60
+#: rc.cpp:63
+msgid "Scrolling"
+msgstr "Прокрутка"
+
+#: rc.cpp:66
+msgid "Enable vertical scrolling when dragging along the right edge."
+msgstr "Включить вертикальную прокрутку при перемещении вдоль правого края"
+
+#: rc.cpp:69
+msgid "Enable Vertical Scrolling"
+msgstr "Включить вертикальную прокрутку"
+
+#: rc.cpp:75
+msgid "Move distance of the finger for a vertical scroll event."
+msgstr "Дистанция перемещения пальца для события верт. прокрутки."
+
+#: rc.cpp:81
+msgid "Enable horizontal scrolling when dragging along the bottom edge."
+msgstr "Включить горизонтальную прокрутку при движении вдоль нижнего края"
+
+#: rc.cpp:84
+msgid "Enable Horizontal Scrolling"
+msgstr "Включить горизонтальную прокрутку"
+
+#: rc.cpp:87
+msgid "Advanced"
+msgstr "Дополнительно"
+
+#: rc.cpp:90
+msgid "Enable edge scrolling to continue after the finger is released."
+msgstr "Продолжать прокрутку по краю после убирания пальца."
+
+#: rc.cpp:93
+msgid "Enable Coasting"
+msgstr "Включить инерцию"
+
+#: rc.cpp:96
+msgid "Coasting threshold scrolling speed."
+msgstr "Порог инерции при прокрутке"
+
+#: rc.cpp:99
+#: rc.cpp:177
+msgid "Slow"
+msgstr "Медленно"
+
+#: rc.cpp:102
+#: rc.cpp:183
+msgid "Fast"
+msgstr "Быстро"
+
+#: rc.cpp:105
+msgid "Enable edge scrolling to continue while the finger stays in an edge corner."
+msgstr "Выполнять прокрутку по краю, пока палец остается в углу."
+
+#: rc.cpp:108
+msgid "Enable Corner Coasting"
+msgstr "Включить угловую инерцию"
+
+#: rc.cpp:111
+msgid "Move distance of the finger for a horizontal scroll event."
+msgstr "Дистанция перемещения пальца для события гориз. прокрутки."
+
+#: rc.cpp:120
+msgid "Enable vertical scrolling when dragging with two fingers anywhere on the touchpad."
+msgstr "Выполнять вертикальную прокрутку при перемещении двух пальцев по тачпаду."
+
+#: rc.cpp:123
+msgid "Enable Vertical Two Fingers Scrolling"
+msgstr "Включить вертикальную прокрутку двумя пальцами"
+
+#: rc.cpp:126
+msgid "Enable horizontal scrolling when dragging with two fingers anywhere on the touchpad."
+msgstr "Выполнять горизонтальную прокрутку при перемещении двух пальцев по тачпаду."
+
+#: rc.cpp:129
+msgid "Enable Horizontal Two Fingers Scrolling"
+msgstr "Включить горизонтальную прокрутку двумя пальцами"
+
+#: rc.cpp:132
+msgid "Circular Scrolling"
+msgstr "Круговая прокрутка"
+
+#: rc.cpp:135
+msgid "If on, circular scrolling is used."
+msgstr "Если включено, применяется круговая прокрутка."
+
+#: rc.cpp:138
+msgid "Enable Circular Scrolling"
+msgstr "Включить круговую прокрутку"
+
+#: rc.cpp:141
+msgid "Trigger region on the touchpad to start circular scrolling."
+msgstr "Регион воздействия для запуска круговой прокрутки."
+
+#: rc.cpp:144
+msgid "Triggered by:"
+msgstr "Переключено с помощью:"
+
+#: rc.cpp:147
+msgid "All Corners"
+msgstr "Все углы"
+
+#: rc.cpp:150
+msgid "Top Edge"
+msgstr "Верхний край"
+
+#: rc.cpp:153
+msgid "Top-Right Corner"
+msgstr "Правый верхний угол"
+
+#: rc.cpp:156
+msgid "Right Edge"
+msgstr "Правый край"
+
+#: rc.cpp:159
+msgid "Bottom-Right Corner"
+msgstr "Правый нижний угол"
+
+#: rc.cpp:162
+msgid "Bottom Edge"
+msgstr "Нижний край"
+
+#: rc.cpp:165
+msgid "Bottom-Left Corner"
+msgstr "Левый нижний угол"
+
+#: rc.cpp:168
+msgid "Left Edge"
+msgstr "Левый край"
+
+#: rc.cpp:171
+msgid "Top-Left Corner"
+msgstr "Левый верхний угол"
+
+#: rc.cpp:174
+msgid "No Trigger"
+msgstr "Без триггеров"
+
+#: rc.cpp:180
+msgid "Move angle (radians) of finger to generate a scroll event."
+msgstr "Угол перемещения (радиан) для начала круговой прокрутки."
+
+#: rc.cpp:186
+#: rc.cpp:243
+msgid "Tapping"
+msgstr "Касание"
+
+#: rc.cpp:189
+msgid "Emulation"
+msgstr "Эмуляция"
+
+#: rc.cpp:192
+msgid "Enable Tapping"
+msgstr "Включить касание"
+
+#: rc.cpp:195
+msgid "Timeout after a tap to recognize it as a single tap."
+msgstr "Таймаут, после которого касание распознается как одиночный клик."
+
+#: rc.cpp:198
+msgid "Single Tap Timeout:"
+msgstr "Таймаут одиночного клика:"
+
+#: rc.cpp:204
+#: rc.cpp:216
+#: rc.cpp:228
+msgid "ms."
+msgstr "мсек."
+
+#: rc.cpp:207
+msgid "Maximum time (in milliseconds) for detecting a double tap."
+msgstr "Максимальное время (миллисекунд) для обнаружения двойного клика."
+
+#: rc.cpp:210
+msgid "Double Tap Time:"
+msgstr "Время двойного клика:"
+
+#: rc.cpp:219
+msgid "The duration of the mouse click generated by tapping."
+msgstr "Продолжительность клика мыши, генерируемого при касании"
+
+#: rc.cpp:222
+msgid "Click Time:"
+msgstr "Время клика:"
+
+#: rc.cpp:231
+msgid "Max Tap Move:"
+msgstr "Макс. перем. касания:"
+
+#: rc.cpp:237
+msgid "pts."
+msgstr "пт"
+
+#: rc.cpp:240
+msgid "Buttons"
+msgstr "Кнопки"
+
+#: rc.cpp:246
+msgid "Right-Top Corner"
+msgstr "Правый верхний угол"
+
+#: rc.cpp:249
+msgid "Right-Bottom Corner"
+msgstr "Правый нижний угол"
+
+#: rc.cpp:252
+msgid "Left-Top Corner"
+msgstr "Левый верхний угол"
+
+#: rc.cpp:255
+msgid "Left-Bottom Corner"
+msgstr "Левый нижний угол"
+
+#: rc.cpp:258
+msgid "One Finger"
+msgstr "Одним пальцем"
+
+#: rc.cpp:261
+msgid "Two Fingers"
+msgstr "Двумя пальцами"
+
+#: rc.cpp:264
+msgid "Three Fingers"
+msgstr "Тремя пальцами"
+
+#: rc.cpp:267
+#, fuzzy
+msgid "means"
+msgstr "метод"
+
+#: rc.cpp:270
+msgid "None"
+msgstr "Отсутствует"
+
+#: rc.cpp:273
+msgid "Left Button"
+msgstr "Левая кнопка"
+
+#: rc.cpp:276
+msgid "Middle Button"
+msgstr "Средняя кнопка"
+
+#: rc.cpp:279
+msgid "Right Button"
+msgstr "Правая кнопка"
+
+#: kcmtouchpad.cpp:351
+msgid "<h1>Touchpad</h1> This module allows you to choose options for the way in which your touchpad works. The actual effect of setting these options depends upon the features provided by your touchpad hardware and the X server on which KDE is running."
+msgstr "<h1>Тачпад</h1> Этот модуль позволяет выбрать варианты, каким образом будет работать ваш тачпад Фактический результат при установке этих параметров зависит от особенностей оборудования и Х-сервера, на котором запущен KDE."
+
